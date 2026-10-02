@@ -1,9 +1,9 @@
 <?xml version="1.0" ?>
 <robot name="testbed" xmlns:xacro="http://www.ros.org/wiki/xacro">
 
-<xacro:include filename="$(find testbed_description)/urdf/materials.xacro" />
-<xacro:include filename="$(find testbed_description)/urdf/testbed.trans" />
-<xacro:include filename="$(find testbed_description)/urdf/testbed.gazebo" />
+<xacro:include filename="$(find testbed_navigation)/urdf/materials.xacro" />
+<xacro:include filename="$(find testbed_navigation)/urdf/testbed.trans" />
+<xacro:include filename="$(find testbed_navigation)/urdf/testbed.gazebo" />
 
 
 <link name="base_footprint">
@@ -24,14 +24,14 @@
   <visual>
     <origin xyz="0 0 0" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find testbed_description)/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find testbed_navigation)/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="0 0 0" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find testbed_description)/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find testbed_navigation)/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -45,14 +45,14 @@
   <visual>
     <origin xyz="0.050476 -0.135241 -0.050004" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find testbed_description)/meshes/left_wheel_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find testbed_navigation)/meshes/left_wheel_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="0.050476 -0.135241 -0.050004" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find testbed_description)/meshes/left_wheel_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find testbed_navigation)/meshes/left_wheel_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -66,14 +66,14 @@
   <visual>
     <origin xyz="0.175703 -0.108591 -0.084004" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find testbed_description)/meshes/caster_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find testbed_navigation)/meshes/caster_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="0.175703 -0.108591 -0.084004" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find testbed_description)/meshes/caster_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find testbed_navigation)/meshes/caster_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -87,14 +87,14 @@
   <visual>
     <origin xyz="0.175703 0.184109 -0.084004" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find testbed_description)/meshes/caster_2.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find testbed_navigation)/meshes/caster_2.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="0.175703 0.184109 -0.084004" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find testbed_description)/meshes/caster_2.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find testbed_navigation)/meshes/caster_2.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -108,14 +108,14 @@
   <visual>
     <origin xyz="-0.074297 -0.108591 -0.084004" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find testbed_description)/meshes/caster_3.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find testbed_navigation)/meshes/caster_3.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="-0.074297 -0.108591 -0.084004" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find testbed_description)/meshes/caster_3.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find testbed_navigation)/meshes/caster_3.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -129,14 +129,14 @@
   <visual>
     <origin xyz="-0.074297 0.184109 -0.084004" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find testbed_description)/meshes/caster_4.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find testbed_navigation)/meshes/caster_4.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="-0.074297 0.184109 -0.084004" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find testbed_description)/meshes/caster_4.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find testbed_navigation)/meshes/caster_4.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -150,14 +150,14 @@
   <visual>
     <origin xyz="0.04 0.033 -0.226509" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find testbed_description)/meshes/lidar_link_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find testbed_navigation)/meshes/lidar_link_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="0.04 0.033 -0.226509" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find testbed_description)/meshes/lidar_link_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find testbed_navigation)/meshes/lidar_link_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -171,14 +171,14 @@
   <visual>
     <origin xyz="0.1 -0.05 -0.1612" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find testbed_description)/meshes/imu_link_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find testbed_navigation)/meshes/imu_link_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="0.1 -0.05 -0.1612" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find testbed_description)/meshes/imu_link_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find testbed_navigation)/meshes/imu_link_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -192,14 +192,14 @@
   <visual>
     <origin xyz="0.1 0.14 -0.1612" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find testbed_description)/meshes/dummy_link_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find testbed_navigation)/meshes/dummy_link_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="0.1 0.14 -0.1612" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find testbed_description)/meshes/dummy_link_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find testbed_navigation)/meshes/dummy_link_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -213,14 +213,14 @@
   <visual>
     <origin xyz="0.050503 0.210759 -0.050004" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find testbed_description)/meshes/right_wheel_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find testbed_navigation)/meshes/right_wheel_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="0.050503 0.210759 -0.050004" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="file://$(find testbed_description)/meshes/right_wheel_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find testbed_navigation)/meshes/right_wheel_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>

@@ -12,7 +12,7 @@ from launch_ros.actions import Node
 def generate_launch_description():
 
   pkg_testbed_gazebo = get_package_share_directory('testbed_navigation')
-  pkg_testbed_description = get_package_share_directory('testbed_navigation')
+  pkg_testbed_navigation = get_package_share_directory('testbed_navigation')
 
   gazebo = IncludeLaunchDescription(
     PythonLaunchDescriptionSource(
@@ -22,7 +22,7 @@ def generate_launch_description():
   
   state_pub = IncludeLaunchDescription(
     PythonLaunchDescriptionSource(
-      os.path.join(pkg_testbed_description, 'launch', 'robot_description.launch.py'),
+      os.path.join(pkg_testbed_navigation, 'launch', 'robot_description.launch.py'),
     )
   )
 
