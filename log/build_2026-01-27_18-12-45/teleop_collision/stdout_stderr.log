@@ -1,0 +1,9 @@
+[35m[1mConsolidate compiler generated dependencies of target teleop_collision[0m
+[ 50%] [32mBuilding CXX object CMakeFiles/teleop_collision.dir/src/teleop_collision.cpp.o[0m
+[01m[K/home/adithya/gz_ws/src/teleop_collision/src/teleop_collision.cpp:8:10:[m[K [01;31m[Kfatal error: [m[Kcontrol_msgs/action/gripper_command.hpp: No such file or directory
+    8 | #include [01;31m[K<control_msgs/action/gripper_command.hpp>[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+gmake[2]: *** [CMakeFiles/teleop_collision.dir/build.make:76: CMakeFiles/teleop_collision.dir/src/teleop_collision.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/teleop_collision.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

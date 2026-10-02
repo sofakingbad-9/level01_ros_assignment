@@ -1,0 +1,1 @@
+Invoking command in '/home/adithya/gz_ws/build/testbed_bringup': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/adithya/gz_ws/src/level01_ros_assignment/testbed_bringup -DCMAKE_INSTALL_PREFIX=/home/adithya/gz_ws/install/testbed_bringup

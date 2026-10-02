@@ -1,0 +1,421 @@
+[0.076s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build']
+[0.076s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=16, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=None, cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, mixin_files=None, mixin=None, verb_parser=<colcon_mixin.mixin.mixin_argument.MixinArgumentDecorator object at 0x769ea2c33640>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0x769ea2c329e0>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0x769ea2c329e0>>, mixin_verb=('build',))
+[0.109s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[0.109s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[0.109s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[0.109s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[0.109s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[0.109s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[0.109s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/adithya/gz_ws'
+[0.109s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[0.109s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[0.110s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[0.110s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[0.110s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[0.110s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[0.110s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[0.110s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[0.110s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[0.112s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[0.112s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[0.112s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[0.112s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[0.112s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[0.112s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[0.112s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[0.112s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[0.112s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[0.112s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[0.112s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[0.112s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[0.112s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[0.112s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[0.112s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ignore', 'ignore_ament_install']
+[0.112s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore'
+[0.112s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ignore_ament_install'
+[0.112s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_pkg']
+[0.112s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_pkg'
+[0.112s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['colcon_meta']
+[0.112s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'colcon_meta'
+[0.112s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['ros']
+[0.112s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'ros'
+[0.113s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['cmake', 'python']
+[0.113s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'cmake'
+[0.113s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python'
+[0.113s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extensions ['python_setup_py']
+[0.113s] Level 1:colcon.colcon_core.package_identification:_identify(src) by extension 'python_setup_py'
+[0.113s] Level 1:colcon.colcon_core.package_identification:_identify(src/level01_ros_assignment) by extensions ['ignore', 'ignore_ament_install']
+[0.113s] Level 1:colcon.colcon_core.package_identification:_identify(src/level01_ros_assignment) by extension 'ignore'
+[0.113s] Level 1:colcon.colcon_core.package_identification:_identify(src/level01_ros_assignment) by extension 'ignore_ament_install'
+[0.113s] Level 1:colcon.colcon_core.package_identification:_identify(src/level01_ros_assignment) by extensions ['colcon_pkg']
+[0.113s] Level 1:colcon.colcon_core.package_identification:_identify(src/level01_ros_assignment) by extension 'colcon_pkg'
+[0.113s] Level 1:colcon.colcon_core.package_identification:_identify(src/level01_ros_assignment) by extensions ['colcon_meta']
+[0.113s] Level 1:colcon.colcon_core.package_identification:_identify(src/level01_ros_assignment) by extension 'colcon_meta'
+[0.113s] Level 1:colcon.colcon_core.package_identification:_identify(src/level01_ros_assignment) by extensions ['ros']
+[0.113s] Level 1:colcon.colcon_core.package_identification:_identify(src/level01_ros_assignment) by extension 'ros'
+[0.113s] Level 1:colcon.colcon_core.package_identification:_identify(src/level01_ros_assignment) by extensions ['cmake', 'python']
+[0.113s] Level 1:colcon.colcon_core.package_identification:_identify(src/level01_ros_assignment) by extension 'cmake'
+[0.113s] Level 1:colcon.colcon_core.package_identification:_identify(src/level01_ros_assignment) by extension 'python'
+[0.113s] Level 1:colcon.colcon_core.package_identification:_identify(src/level01_ros_assignment) by extensions ['python_setup_py']
+[0.113s] Level 1:colcon.colcon_core.package_identification:_identify(src/level01_ros_assignment) by extension 'python_setup_py'
+[0.113s] Level 1:colcon.colcon_core.package_identification:_identify(src/level01_ros_assignment/testbed_bringup) by extensions ['ignore', 'ignore_ament_install']
+[0.113s] Level 1:colcon.colcon_core.package_identification:_identify(src/level01_ros_assignment/testbed_bringup) by extension 'ignore'
+[0.113s] Level 1:colcon.colcon_core.package_identification:_identify(src/level01_ros_assignment/testbed_bringup) by extension 'ignore_ament_install'
+[0.113s] Level 1:colcon.colcon_core.package_identification:_identify(src/level01_ros_assignment/testbed_bringup) by extensions ['colcon_pkg']
+[0.113s] Level 1:colcon.colcon_core.package_identification:_identify(src/level01_ros_assignment/testbed_bringup) by extension 'colcon_pkg'
+[0.113s] Level 1:colcon.colcon_core.package_identification:_identify(src/level01_ros_assignment/testbed_bringup) by extensions ['colcon_meta']
+[0.113s] Level 1:colcon.colcon_core.package_identification:_identify(src/level01_ros_assignment/testbed_bringup) by extension 'colcon_meta'
+[0.113s] Level 1:colcon.colcon_core.package_identification:_identify(src/level01_ros_assignment/testbed_bringup) by extensions ['ros']
+[0.113s] Level 1:colcon.colcon_core.package_identification:_identify(src/level01_ros_assignment/testbed_bringup) by extension 'ros'
+[0.115s] DEBUG:colcon.colcon_core.package_identification:Package 'src/level01_ros_assignment/testbed_bringup' with type 'ros.ament_cmake' and name 'testbed_bringup'
+[0.115s] Level 1:colcon.colcon_core.package_identification:_identify(src/level01_ros_assignment/testbed_description) by extensions ['ignore', 'ignore_ament_install']
+[0.115s] Level 1:colcon.colcon_core.package_identification:_identify(src/level01_ros_assignment/testbed_description) by extension 'ignore'
+[0.115s] Level 1:colcon.colcon_core.package_identification:_identify(src/level01_ros_assignment/testbed_description) by extension 'ignore_ament_install'
+[0.115s] Level 1:colcon.colcon_core.package_identification:_identify(src/level01_ros_assignment/testbed_description) by extensions ['colcon_pkg']
+[0.115s] Level 1:colcon.colcon_core.package_identification:_identify(src/level01_ros_assignment/testbed_description) by extension 'colcon_pkg'
+[0.115s] Level 1:colcon.colcon_core.package_identification:_identify(src/level01_ros_assignment/testbed_description) by extensions ['colcon_meta']
+[0.115s] Level 1:colcon.colcon_core.package_identification:_identify(src/level01_ros_assignment/testbed_description) by extension 'colcon_meta'
+[0.115s] Level 1:colcon.colcon_core.package_identification:_identify(src/level01_ros_assignment/testbed_description) by extensions ['ros']
+[0.115s] Level 1:colcon.colcon_core.package_identification:_identify(src/level01_ros_assignment/testbed_description) by extension 'ros'
+[0.115s] DEBUG:colcon.colcon_core.package_identification:Package 'src/level01_ros_assignment/testbed_description' with type 'ros.ament_cmake' and name 'testbed_description'
+[0.115s] Level 1:colcon.colcon_core.package_identification:_identify(src/level01_ros_assignment/testbed_gazebo) by extensions ['ignore', 'ignore_ament_install']
+[0.115s] Level 1:colcon.colcon_core.package_identification:_identify(src/level01_ros_assignment/testbed_gazebo) by extension 'ignore'
+[0.115s] Level 1:colcon.colcon_core.package_identification:_identify(src/level01_ros_assignment/testbed_gazebo) by extension 'ignore_ament_install'
+[0.115s] Level 1:colcon.colcon_core.package_identification:_identify(src/level01_ros_assignment/testbed_gazebo) by extensions ['colcon_pkg']
+[0.116s] Level 1:colcon.colcon_core.package_identification:_identify(src/level01_ros_assignment/testbed_gazebo) by extension 'colcon_pkg'
+[0.116s] Level 1:colcon.colcon_core.package_identification:_identify(src/level01_ros_assignment/testbed_gazebo) by extensions ['colcon_meta']
+[0.116s] Level 1:colcon.colcon_core.package_identification:_identify(src/level01_ros_assignment/testbed_gazebo) by extension 'colcon_meta'
+[0.116s] Level 1:colcon.colcon_core.package_identification:_identify(src/level01_ros_assignment/testbed_gazebo) by extensions ['ros']
+[0.116s] Level 1:colcon.colcon_core.package_identification:_identify(src/level01_ros_assignment/testbed_gazebo) by extension 'ros'
+[0.116s] DEBUG:colcon.colcon_core.package_identification:Package 'src/level01_ros_assignment/testbed_gazebo' with type 'ros.ament_cmake' and name 'testbed_gazebo'
+[0.116s] Level 1:colcon.colcon_core.package_identification:_identify(src/pointcloud_to_laserscan) by extensions ['ignore', 'ignore_ament_install']
+[0.116s] Level 1:colcon.colcon_core.package_identification:_identify(src/pointcloud_to_laserscan) by extension 'ignore'
+[0.116s] Level 1:colcon.colcon_core.package_identification:_identify(src/pointcloud_to_laserscan) by extension 'ignore_ament_install'
+[0.116s] Level 1:colcon.colcon_core.package_identification:_identify(src/pointcloud_to_laserscan) by extensions ['colcon_pkg']
+[0.116s] Level 1:colcon.colcon_core.package_identification:_identify(src/pointcloud_to_laserscan) by extension 'colcon_pkg'
+[0.116s] Level 1:colcon.colcon_core.package_identification:_identify(src/pointcloud_to_laserscan) by extensions ['colcon_meta']
+[0.116s] Level 1:colcon.colcon_core.package_identification:_identify(src/pointcloud_to_laserscan) by extension 'colcon_meta'
+[0.116s] Level 1:colcon.colcon_core.package_identification:_identify(src/pointcloud_to_laserscan) by extensions ['ros']
+[0.116s] Level 1:colcon.colcon_core.package_identification:_identify(src/pointcloud_to_laserscan) by extension 'ros'
+[0.117s] DEBUG:colcon.colcon_core.package_identification:Package 'src/pointcloud_to_laserscan' with type 'ros.ament_cmake' and name 'pointcloud_to_laserscan'
+[0.117s] Level 1:colcon.colcon_core.package_identification:_identify(src/testbed_navigation) by extensions ['ignore', 'ignore_ament_install']
+[0.117s] Level 1:colcon.colcon_core.package_identification:_identify(src/testbed_navigation) by extension 'ignore'
+[0.117s] Level 1:colcon.colcon_core.package_identification:_identify(src/testbed_navigation) by extension 'ignore_ament_install'
+[0.117s] Level 1:colcon.colcon_core.package_identification:_identify(src/testbed_navigation) by extensions ['colcon_pkg']
+[0.117s] Level 1:colcon.colcon_core.package_identification:_identify(src/testbed_navigation) by extension 'colcon_pkg'
+[0.117s] Level 1:colcon.colcon_core.package_identification:_identify(src/testbed_navigation) by extensions ['colcon_meta']
+[0.117s] Level 1:colcon.colcon_core.package_identification:_identify(src/testbed_navigation) by extension 'colcon_meta'
+[0.117s] Level 1:colcon.colcon_core.package_identification:_identify(src/testbed_navigation) by extensions ['ros']
+[0.117s] Level 1:colcon.colcon_core.package_identification:_identify(src/testbed_navigation) by extension 'ros'
+[0.118s] DEBUG:colcon.colcon_core.package_identification:Package 'src/testbed_navigation' with type 'ros.ament_cmake' and name 'testbed_navigation'
+[0.118s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[0.118s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[0.118s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[0.118s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[0.118s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[0.132s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[0.132s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[0.133s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 8 installed packages in /home/adithya/gz_ws/install
+[0.134s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 492 installed packages in /opt/ros/humble
+[0.135s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[0.174s] Level 5:colcon.colcon_core.verb:set package 'pointcloud_to_laserscan' build argument 'cmake_args' from command line to 'None'
+[0.174s] Level 5:colcon.colcon_core.verb:set package 'pointcloud_to_laserscan' build argument 'cmake_target' from command line to 'None'
+[0.174s] Level 5:colcon.colcon_core.verb:set package 'pointcloud_to_laserscan' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.174s] Level 5:colcon.colcon_core.verb:set package 'pointcloud_to_laserscan' build argument 'cmake_clean_cache' from command line to 'False'
+[0.174s] Level 5:colcon.colcon_core.verb:set package 'pointcloud_to_laserscan' build argument 'cmake_clean_first' from command line to 'False'
+[0.174s] Level 5:colcon.colcon_core.verb:set package 'pointcloud_to_laserscan' build argument 'cmake_force_configure' from command line to 'False'
+[0.174s] Level 5:colcon.colcon_core.verb:set package 'pointcloud_to_laserscan' build argument 'ament_cmake_args' from command line to 'None'
+[0.174s] Level 5:colcon.colcon_core.verb:set package 'pointcloud_to_laserscan' build argument 'catkin_cmake_args' from command line to 'None'
+[0.174s] Level 5:colcon.colcon_core.verb:set package 'pointcloud_to_laserscan' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.174s] DEBUG:colcon.colcon_core.verb:Building package 'pointcloud_to_laserscan' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/adithya/gz_ws/build/pointcloud_to_laserscan', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/adithya/gz_ws/install/pointcloud_to_laserscan', 'merge_install': False, 'path': '/home/adithya/gz_ws/src/pointcloud_to_laserscan', 'symlink_install': False, 'test_result_base': None}
+[0.174s] Level 5:colcon.colcon_core.verb:set package 'testbed_bringup' build argument 'cmake_args' from command line to 'None'
+[0.174s] Level 5:colcon.colcon_core.verb:set package 'testbed_bringup' build argument 'cmake_target' from command line to 'None'
+[0.174s] Level 5:colcon.colcon_core.verb:set package 'testbed_bringup' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.174s] Level 5:colcon.colcon_core.verb:set package 'testbed_bringup' build argument 'cmake_clean_cache' from command line to 'False'
+[0.174s] Level 5:colcon.colcon_core.verb:set package 'testbed_bringup' build argument 'cmake_clean_first' from command line to 'False'
+[0.174s] Level 5:colcon.colcon_core.verb:set package 'testbed_bringup' build argument 'cmake_force_configure' from command line to 'False'
+[0.174s] Level 5:colcon.colcon_core.verb:set package 'testbed_bringup' build argument 'ament_cmake_args' from command line to 'None'
+[0.174s] Level 5:colcon.colcon_core.verb:set package 'testbed_bringup' build argument 'catkin_cmake_args' from command line to 'None'
+[0.174s] Level 5:colcon.colcon_core.verb:set package 'testbed_bringup' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.174s] DEBUG:colcon.colcon_core.verb:Building package 'testbed_bringup' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/adithya/gz_ws/build/testbed_bringup', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/adithya/gz_ws/install/testbed_bringup', 'merge_install': False, 'path': '/home/adithya/gz_ws/src/level01_ros_assignment/testbed_bringup', 'symlink_install': False, 'test_result_base': None}
+[0.174s] Level 5:colcon.colcon_core.verb:set package 'testbed_description' build argument 'cmake_args' from command line to 'None'
+[0.174s] Level 5:colcon.colcon_core.verb:set package 'testbed_description' build argument 'cmake_target' from command line to 'None'
+[0.174s] Level 5:colcon.colcon_core.verb:set package 'testbed_description' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.174s] Level 5:colcon.colcon_core.verb:set package 'testbed_description' build argument 'cmake_clean_cache' from command line to 'False'
+[0.175s] Level 5:colcon.colcon_core.verb:set package 'testbed_description' build argument 'cmake_clean_first' from command line to 'False'
+[0.175s] Level 5:colcon.colcon_core.verb:set package 'testbed_description' build argument 'cmake_force_configure' from command line to 'False'
+[0.175s] Level 5:colcon.colcon_core.verb:set package 'testbed_description' build argument 'ament_cmake_args' from command line to 'None'
+[0.175s] Level 5:colcon.colcon_core.verb:set package 'testbed_description' build argument 'catkin_cmake_args' from command line to 'None'
+[0.175s] Level 5:colcon.colcon_core.verb:set package 'testbed_description' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.175s] DEBUG:colcon.colcon_core.verb:Building package 'testbed_description' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/adithya/gz_ws/build/testbed_description', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/adithya/gz_ws/install/testbed_description', 'merge_install': False, 'path': '/home/adithya/gz_ws/src/level01_ros_assignment/testbed_description', 'symlink_install': False, 'test_result_base': None}
+[0.175s] Level 5:colcon.colcon_core.verb:set package 'testbed_navigation' build argument 'cmake_args' from command line to 'None'
+[0.175s] Level 5:colcon.colcon_core.verb:set package 'testbed_navigation' build argument 'cmake_target' from command line to 'None'
+[0.175s] Level 5:colcon.colcon_core.verb:set package 'testbed_navigation' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.175s] Level 5:colcon.colcon_core.verb:set package 'testbed_navigation' build argument 'cmake_clean_cache' from command line to 'False'
+[0.175s] Level 5:colcon.colcon_core.verb:set package 'testbed_navigation' build argument 'cmake_clean_first' from command line to 'False'
+[0.175s] Level 5:colcon.colcon_core.verb:set package 'testbed_navigation' build argument 'cmake_force_configure' from command line to 'False'
+[0.175s] Level 5:colcon.colcon_core.verb:set package 'testbed_navigation' build argument 'ament_cmake_args' from command line to 'None'
+[0.175s] Level 5:colcon.colcon_core.verb:set package 'testbed_navigation' build argument 'catkin_cmake_args' from command line to 'None'
+[0.175s] Level 5:colcon.colcon_core.verb:set package 'testbed_navigation' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.175s] DEBUG:colcon.colcon_core.verb:Building package 'testbed_navigation' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/adithya/gz_ws/build/testbed_navigation', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/adithya/gz_ws/install/testbed_navigation', 'merge_install': False, 'path': '/home/adithya/gz_ws/src/testbed_navigation', 'symlink_install': False, 'test_result_base': None}
+[0.175s] Level 5:colcon.colcon_core.verb:set package 'testbed_gazebo' build argument 'cmake_args' from command line to 'None'
+[0.175s] Level 5:colcon.colcon_core.verb:set package 'testbed_gazebo' build argument 'cmake_target' from command line to 'None'
+[0.175s] Level 5:colcon.colcon_core.verb:set package 'testbed_gazebo' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[0.175s] Level 5:colcon.colcon_core.verb:set package 'testbed_gazebo' build argument 'cmake_clean_cache' from command line to 'False'
+[0.175s] Level 5:colcon.colcon_core.verb:set package 'testbed_gazebo' build argument 'cmake_clean_first' from command line to 'False'
+[0.175s] Level 5:colcon.colcon_core.verb:set package 'testbed_gazebo' build argument 'cmake_force_configure' from command line to 'False'
+[0.175s] Level 5:colcon.colcon_core.verb:set package 'testbed_gazebo' build argument 'ament_cmake_args' from command line to 'None'
+[0.175s] Level 5:colcon.colcon_core.verb:set package 'testbed_gazebo' build argument 'catkin_cmake_args' from command line to 'None'
+[0.175s] Level 5:colcon.colcon_core.verb:set package 'testbed_gazebo' build argument 'catkin_skip_building_tests' from command line to 'False'
+[0.175s] DEBUG:colcon.colcon_core.verb:Building package 'testbed_gazebo' with the following arguments: {'ament_cmake_args': None, 'build_base': '/home/adithya/gz_ws/build/testbed_gazebo', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': None, 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/home/adithya/gz_ws/install/testbed_gazebo', 'merge_install': False, 'path': '/home/adithya/gz_ws/src/level01_ros_assignment/testbed_gazebo', 'symlink_install': False, 'test_result_base': None}
+[0.175s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[0.176s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[0.176s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/adithya/gz_ws/src/level01_ros_assignment/testbed_description' with build type 'ament_cmake'
+[0.176s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/adithya/gz_ws/src/level01_ros_assignment/testbed_description'
+[0.178s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[0.178s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.178s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.180s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/adithya/gz_ws/src/pointcloud_to_laserscan' with build type 'ament_cmake'
+[0.180s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/adithya/gz_ws/src/pointcloud_to_laserscan'
+[0.181s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.181s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.183s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/adithya/gz_ws/src/level01_ros_assignment/testbed_bringup' with build type 'ament_cmake'
+[0.183s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/adithya/gz_ws/src/level01_ros_assignment/testbed_bringup'
+[0.183s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.183s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.186s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/adithya/gz_ws/src/testbed_navigation' with build type 'ament_cmake'
+[0.186s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/adithya/gz_ws/src/testbed_navigation'
+[0.186s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.186s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.191s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/adithya/gz_ws/build/testbed_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/adithya/gz_ws/src/level01_ros_assignment/testbed_description -DCMAKE_INSTALL_PREFIX=/home/adithya/gz_ws/install/testbed_description
+[0.192s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/adithya/gz_ws/build/pointcloud_to_laserscan': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/adithya/gz_ws/src/pointcloud_to_laserscan -DCMAKE_INSTALL_PREFIX=/home/adithya/gz_ws/install/pointcloud_to_laserscan
+[0.193s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/adithya/gz_ws/build/testbed_bringup': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/adithya/gz_ws/src/level01_ros_assignment/testbed_bringup -DCMAKE_INSTALL_PREFIX=/home/adithya/gz_ws/install/testbed_bringup
+[0.196s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/adithya/gz_ws/build/testbed_navigation': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/adithya/gz_ws/src/testbed_navigation -DCMAKE_INSTALL_PREFIX=/home/adithya/gz_ws/install/testbed_navigation
+[0.841s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/adithya/gz_ws/build/testbed_bringup' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/adithya/gz_ws/src/level01_ros_assignment/testbed_bringup -DCMAKE_INSTALL_PREFIX=/home/adithya/gz_ws/install/testbed_bringup
+[0.842s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/adithya/gz_ws/build/testbed_bringup': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/adithya/gz_ws/build/testbed_bringup -- -j16 -l16
+[0.858s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/adithya/gz_ws/build/testbed_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/adithya/gz_ws/src/level01_ros_assignment/testbed_description -DCMAKE_INSTALL_PREFIX=/home/adithya/gz_ws/install/testbed_description
+[0.859s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/adithya/gz_ws/build/testbed_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/adithya/gz_ws/build/testbed_description -- -j16 -l16
+[0.870s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/adithya/gz_ws/build/testbed_bringup' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/adithya/gz_ws/build/testbed_bringup -- -j16 -l16
+[0.879s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/adithya/gz_ws/build/testbed_bringup': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/adithya/gz_ws/build/testbed_bringup
+[0.887s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(testbed_bringup)
+[0.888s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/adithya/gz_ws/build/testbed_bringup' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/adithya/gz_ws/build/testbed_bringup
+[0.889s] Level 1:colcon.colcon_core.environment:checking '/home/adithya/gz_ws/install/testbed_bringup' for CMake module files
+[0.889s] Level 1:colcon.colcon_core.environment:checking '/home/adithya/gz_ws/install/testbed_bringup' for CMake config files
+[0.890s] Level 1:colcon.colcon_core.shell:create_environment_hook('testbed_bringup', 'cmake_prefix_path')
+[0.890s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/adithya/gz_ws/install/testbed_bringup/share/testbed_bringup/hook/cmake_prefix_path.ps1'
+[0.890s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/adithya/gz_ws/install/testbed_bringup/share/testbed_bringup/hook/cmake_prefix_path.dsv'
+[0.891s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/adithya/gz_ws/install/testbed_bringup/share/testbed_bringup/hook/cmake_prefix_path.sh'
+[0.891s] Level 1:colcon.colcon_core.environment:checking '/home/adithya/gz_ws/install/testbed_bringup/bin'
+[0.891s] Level 1:colcon.colcon_core.environment:checking '/home/adithya/gz_ws/install/testbed_bringup/lib/pkgconfig/testbed_bringup.pc'
+[0.891s] Level 1:colcon.colcon_core.environment:checking '/home/adithya/gz_ws/install/testbed_bringup/lib/python3.10/site-packages'
+[0.892s] Level 1:colcon.colcon_core.environment:checking '/home/adithya/gz_ws/install/testbed_bringup/bin'
+[0.892s] INFO:colcon.colcon_core.shell:Creating package script '/home/adithya/gz_ws/install/testbed_bringup/share/testbed_bringup/package.ps1'
+[0.892s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/adithya/gz_ws/install/testbed_bringup/share/testbed_bringup/package.dsv'
+[0.893s] INFO:colcon.colcon_core.shell:Creating package script '/home/adithya/gz_ws/install/testbed_bringup/share/testbed_bringup/package.sh'
+[0.893s] INFO:colcon.colcon_core.shell:Creating package script '/home/adithya/gz_ws/install/testbed_bringup/share/testbed_bringup/package.bash'
+[0.894s] INFO:colcon.colcon_core.shell:Creating package script '/home/adithya/gz_ws/install/testbed_bringup/share/testbed_bringup/package.zsh'
+[0.894s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/adithya/gz_ws/install/testbed_bringup/share/colcon-core/packages/testbed_bringup)
+[0.894s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(testbed_bringup)
+[0.895s] Level 1:colcon.colcon_core.environment:checking '/home/adithya/gz_ws/install/testbed_bringup' for CMake module files
+[0.895s] Level 1:colcon.colcon_core.environment:checking '/home/adithya/gz_ws/install/testbed_bringup' for CMake config files
+[0.895s] Level 1:colcon.colcon_core.shell:create_environment_hook('testbed_bringup', 'cmake_prefix_path')
+[0.895s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/adithya/gz_ws/install/testbed_bringup/share/testbed_bringup/hook/cmake_prefix_path.ps1'
+[0.895s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/adithya/gz_ws/install/testbed_bringup/share/testbed_bringup/hook/cmake_prefix_path.dsv'
+[0.896s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/adithya/gz_ws/install/testbed_bringup/share/testbed_bringup/hook/cmake_prefix_path.sh'
+[0.896s] Level 1:colcon.colcon_core.environment:checking '/home/adithya/gz_ws/install/testbed_bringup/bin'
+[0.896s] Level 1:colcon.colcon_core.environment:checking '/home/adithya/gz_ws/install/testbed_bringup/lib/pkgconfig/testbed_bringup.pc'
+[0.896s] Level 1:colcon.colcon_core.environment:checking '/home/adithya/gz_ws/install/testbed_bringup/lib/python3.10/site-packages'
+[0.896s] Level 1:colcon.colcon_core.environment:checking '/home/adithya/gz_ws/install/testbed_bringup/bin'
+[0.896s] INFO:colcon.colcon_core.shell:Creating package script '/home/adithya/gz_ws/install/testbed_bringup/share/testbed_bringup/package.ps1'
+[0.897s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/adithya/gz_ws/install/testbed_bringup/share/testbed_bringup/package.dsv'
+[0.897s] INFO:colcon.colcon_core.shell:Creating package script '/home/adithya/gz_ws/install/testbed_bringup/share/testbed_bringup/package.sh'
+[0.897s] INFO:colcon.colcon_core.shell:Creating package script '/home/adithya/gz_ws/install/testbed_bringup/share/testbed_bringup/package.bash'
+[0.898s] INFO:colcon.colcon_core.shell:Creating package script '/home/adithya/gz_ws/install/testbed_bringup/share/testbed_bringup/package.zsh'
+[0.898s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/adithya/gz_ws/install/testbed_bringup/share/colcon-core/packages/testbed_bringup)
+[0.899s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/adithya/gz_ws/build/testbed_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/adithya/gz_ws/build/testbed_description -- -j16 -l16
+[0.900s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/adithya/gz_ws/build/testbed_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/adithya/gz_ws/build/testbed_description
+[0.907s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(testbed_description)
+[0.907s] Level 1:colcon.colcon_core.environment:checking '/home/adithya/gz_ws/install/testbed_description' for CMake module files
+[0.908s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/adithya/gz_ws/build/testbed_description' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/adithya/gz_ws/build/testbed_description
+[0.908s] Level 1:colcon.colcon_core.environment:checking '/home/adithya/gz_ws/install/testbed_description' for CMake config files
+[0.909s] Level 1:colcon.colcon_core.shell:create_environment_hook('testbed_description', 'cmake_prefix_path')
+[0.909s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/adithya/gz_ws/install/testbed_description/share/testbed_description/hook/cmake_prefix_path.ps1'
+[0.909s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/adithya/gz_ws/install/testbed_description/share/testbed_description/hook/cmake_prefix_path.dsv'
+[0.910s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/adithya/gz_ws/install/testbed_description/share/testbed_description/hook/cmake_prefix_path.sh'
+[0.910s] Level 1:colcon.colcon_core.environment:checking '/home/adithya/gz_ws/install/testbed_description/bin'
+[0.910s] Level 1:colcon.colcon_core.environment:checking '/home/adithya/gz_ws/install/testbed_description/lib/pkgconfig/testbed_description.pc'
+[0.911s] Level 1:colcon.colcon_core.environment:checking '/home/adithya/gz_ws/install/testbed_description/lib/python3.10/site-packages'
+[0.911s] Level 1:colcon.colcon_core.environment:checking '/home/adithya/gz_ws/install/testbed_description/bin'
+[0.912s] INFO:colcon.colcon_core.shell:Creating package script '/home/adithya/gz_ws/install/testbed_description/share/testbed_description/package.ps1'
+[0.912s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/adithya/gz_ws/install/testbed_description/share/testbed_description/package.dsv'
+[0.913s] INFO:colcon.colcon_core.shell:Creating package script '/home/adithya/gz_ws/install/testbed_description/share/testbed_description/package.sh'
+[0.913s] INFO:colcon.colcon_core.shell:Creating package script '/home/adithya/gz_ws/install/testbed_description/share/testbed_description/package.bash'
+[0.914s] INFO:colcon.colcon_core.shell:Creating package script '/home/adithya/gz_ws/install/testbed_description/share/testbed_description/package.zsh'
+[0.914s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/adithya/gz_ws/install/testbed_description/share/colcon-core/packages/testbed_description)
+[0.915s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(testbed_description)
+[0.915s] Level 1:colcon.colcon_core.environment:checking '/home/adithya/gz_ws/install/testbed_description' for CMake module files
+[0.915s] Level 1:colcon.colcon_core.environment:checking '/home/adithya/gz_ws/install/testbed_description' for CMake config files
+[0.915s] Level 1:colcon.colcon_core.shell:create_environment_hook('testbed_description', 'cmake_prefix_path')
+[0.915s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/adithya/gz_ws/install/testbed_description/share/testbed_description/hook/cmake_prefix_path.ps1'
+[0.916s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/adithya/gz_ws/install/testbed_description/share/testbed_description/hook/cmake_prefix_path.dsv'
+[0.916s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/adithya/gz_ws/install/testbed_description/share/testbed_description/hook/cmake_prefix_path.sh'
+[0.916s] Level 1:colcon.colcon_core.environment:checking '/home/adithya/gz_ws/install/testbed_description/bin'
+[0.916s] Level 1:colcon.colcon_core.environment:checking '/home/adithya/gz_ws/install/testbed_description/lib/pkgconfig/testbed_description.pc'
+[0.916s] Level 1:colcon.colcon_core.environment:checking '/home/adithya/gz_ws/install/testbed_description/lib/python3.10/site-packages'
+[0.917s] Level 1:colcon.colcon_core.environment:checking '/home/adithya/gz_ws/install/testbed_description/bin'
+[0.917s] INFO:colcon.colcon_core.shell:Creating package script '/home/adithya/gz_ws/install/testbed_description/share/testbed_description/package.ps1'
+[0.917s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/adithya/gz_ws/install/testbed_description/share/testbed_description/package.dsv'
+[0.917s] INFO:colcon.colcon_core.shell:Creating package script '/home/adithya/gz_ws/install/testbed_description/share/testbed_description/package.sh'
+[0.918s] INFO:colcon.colcon_core.shell:Creating package script '/home/adithya/gz_ws/install/testbed_description/share/testbed_description/package.bash'
+[0.918s] INFO:colcon.colcon_core.shell:Creating package script '/home/adithya/gz_ws/install/testbed_description/share/testbed_description/package.zsh'
+[0.918s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/adithya/gz_ws/install/testbed_description/share/colcon-core/packages/testbed_description)
+[0.918s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/home/adithya/gz_ws/src/level01_ros_assignment/testbed_gazebo' with build type 'ament_cmake'
+[0.918s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/home/adithya/gz_ws/src/level01_ros_assignment/testbed_gazebo'
+[0.918s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[0.918s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[0.926s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/adithya/gz_ws/build/testbed_gazebo': CMAKE_PREFIX_PATH=/home/adithya/gz_ws/install/testbed_description:/home/adithya/gz_ws/install/testbed_navigation:/home/adithya/gz_ws/install/testbed_gazebo:/home/adithya/gz_ws/install/testbed_bringup:/home/adithya/gz_ws/install/teleop_collision:/home/adithya/gz_ws/install/pointcloud_to_laserscan:/home/adithya/gz_ws/install/leg_assembly_moveit_config:/home/adithya/gz_ws/install/leg_assembly:/opt/openrobots:/opt/ros/humble /usr/bin/cmake /home/adithya/gz_ws/src/level01_ros_assignment/testbed_gazebo -DCMAKE_INSTALL_PREFIX=/home/adithya/gz_ws/install/testbed_gazebo
+[1.443s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/adithya/gz_ws/build/pointcloud_to_laserscan' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/adithya/gz_ws/src/pointcloud_to_laserscan -DCMAKE_INSTALL_PREFIX=/home/adithya/gz_ws/install/pointcloud_to_laserscan
+[1.444s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/adithya/gz_ws/build/pointcloud_to_laserscan': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/adithya/gz_ws/build/pointcloud_to_laserscan -- -j16 -l16
+[1.480s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/adithya/gz_ws/build/testbed_navigation' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/adithya/gz_ws/src/testbed_navigation -DCMAKE_INSTALL_PREFIX=/home/adithya/gz_ws/install/testbed_navigation
+[1.481s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/adithya/gz_ws/build/testbed_navigation': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/adithya/gz_ws/build/testbed_navigation -- -j16 -l16
+[1.510s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/adithya/gz_ws/build/testbed_navigation' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/adithya/gz_ws/build/testbed_navigation -- -j16 -l16
+[1.511s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/adithya/gz_ws/build/testbed_navigation': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/adithya/gz_ws/build/testbed_navigation
+[1.522s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(testbed_navigation)
+[1.522s] Level 1:colcon.colcon_core.environment:checking '/home/adithya/gz_ws/install/testbed_navigation' for CMake module files
+[1.523s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/adithya/gz_ws/build/testbed_navigation' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/adithya/gz_ws/build/testbed_navigation
+[1.523s] Level 1:colcon.colcon_core.environment:checking '/home/adithya/gz_ws/install/testbed_navigation' for CMake config files
+[1.523s] Level 1:colcon.colcon_core.shell:create_environment_hook('testbed_navigation', 'cmake_prefix_path')
+[1.524s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/adithya/gz_ws/install/testbed_navigation/share/testbed_navigation/hook/cmake_prefix_path.ps1'
+[1.524s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/adithya/gz_ws/install/testbed_navigation/share/testbed_navigation/hook/cmake_prefix_path.dsv'
+[1.525s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/adithya/gz_ws/install/testbed_navigation/share/testbed_navigation/hook/cmake_prefix_path.sh'
+[1.525s] Level 1:colcon.colcon_core.environment:checking '/home/adithya/gz_ws/install/testbed_navigation/bin'
+[1.525s] Level 1:colcon.colcon_core.environment:checking '/home/adithya/gz_ws/install/testbed_navigation/lib/pkgconfig/testbed_navigation.pc'
+[1.526s] Level 1:colcon.colcon_core.environment:checking '/home/adithya/gz_ws/install/testbed_navigation/lib/python3.10/site-packages'
+[1.526s] Level 1:colcon.colcon_core.environment:checking '/home/adithya/gz_ws/install/testbed_navigation/bin'
+[1.526s] INFO:colcon.colcon_core.shell:Creating package script '/home/adithya/gz_ws/install/testbed_navigation/share/testbed_navigation/package.ps1'
+[1.527s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/adithya/gz_ws/install/testbed_navigation/share/testbed_navigation/package.dsv'
+[1.527s] INFO:colcon.colcon_core.shell:Creating package script '/home/adithya/gz_ws/install/testbed_navigation/share/testbed_navigation/package.sh'
+[1.527s] INFO:colcon.colcon_core.shell:Creating package script '/home/adithya/gz_ws/install/testbed_navigation/share/testbed_navigation/package.bash'
+[1.527s] INFO:colcon.colcon_core.shell:Creating package script '/home/adithya/gz_ws/install/testbed_navigation/share/testbed_navigation/package.zsh'
+[1.527s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/adithya/gz_ws/install/testbed_navigation/share/colcon-core/packages/testbed_navigation)
+[1.528s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(testbed_navigation)
+[1.528s] Level 1:colcon.colcon_core.environment:checking '/home/adithya/gz_ws/install/testbed_navigation' for CMake module files
+[1.528s] Level 1:colcon.colcon_core.environment:checking '/home/adithya/gz_ws/install/testbed_navigation' for CMake config files
+[1.528s] Level 1:colcon.colcon_core.shell:create_environment_hook('testbed_navigation', 'cmake_prefix_path')
+[1.529s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/adithya/gz_ws/install/testbed_navigation/share/testbed_navigation/hook/cmake_prefix_path.ps1'
+[1.529s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/adithya/gz_ws/install/testbed_navigation/share/testbed_navigation/hook/cmake_prefix_path.dsv'
+[1.529s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/adithya/gz_ws/install/testbed_navigation/share/testbed_navigation/hook/cmake_prefix_path.sh'
+[1.529s] Level 1:colcon.colcon_core.environment:checking '/home/adithya/gz_ws/install/testbed_navigation/bin'
+[1.529s] Level 1:colcon.colcon_core.environment:checking '/home/adithya/gz_ws/install/testbed_navigation/lib/pkgconfig/testbed_navigation.pc'
+[1.529s] Level 1:colcon.colcon_core.environment:checking '/home/adithya/gz_ws/install/testbed_navigation/lib/python3.10/site-packages'
+[1.530s] Level 1:colcon.colcon_core.environment:checking '/home/adithya/gz_ws/install/testbed_navigation/bin'
+[1.530s] INFO:colcon.colcon_core.shell:Creating package script '/home/adithya/gz_ws/install/testbed_navigation/share/testbed_navigation/package.ps1'
+[1.530s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/adithya/gz_ws/install/testbed_navigation/share/testbed_navigation/package.dsv'
+[1.530s] INFO:colcon.colcon_core.shell:Creating package script '/home/adithya/gz_ws/install/testbed_navigation/share/testbed_navigation/package.sh'
+[1.531s] INFO:colcon.colcon_core.shell:Creating package script '/home/adithya/gz_ws/install/testbed_navigation/share/testbed_navigation/package.bash'
+[1.531s] INFO:colcon.colcon_core.shell:Creating package script '/home/adithya/gz_ws/install/testbed_navigation/share/testbed_navigation/package.zsh'
+[1.531s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/adithya/gz_ws/install/testbed_navigation/share/colcon-core/packages/testbed_navigation)
+[1.554s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/adithya/gz_ws/build/testbed_gazebo' returned '0': CMAKE_PREFIX_PATH=/home/adithya/gz_ws/install/testbed_description:/home/adithya/gz_ws/install/testbed_navigation:/home/adithya/gz_ws/install/testbed_gazebo:/home/adithya/gz_ws/install/testbed_bringup:/home/adithya/gz_ws/install/teleop_collision:/home/adithya/gz_ws/install/pointcloud_to_laserscan:/home/adithya/gz_ws/install/leg_assembly_moveit_config:/home/adithya/gz_ws/install/leg_assembly:/opt/openrobots:/opt/ros/humble /usr/bin/cmake /home/adithya/gz_ws/src/level01_ros_assignment/testbed_gazebo -DCMAKE_INSTALL_PREFIX=/home/adithya/gz_ws/install/testbed_gazebo
+[1.555s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/adithya/gz_ws/build/testbed_gazebo': CMAKE_PREFIX_PATH=/home/adithya/gz_ws/install/testbed_description:/home/adithya/gz_ws/install/testbed_navigation:/home/adithya/gz_ws/install/testbed_gazebo:/home/adithya/gz_ws/install/testbed_bringup:/home/adithya/gz_ws/install/teleop_collision:/home/adithya/gz_ws/install/pointcloud_to_laserscan:/home/adithya/gz_ws/install/leg_assembly_moveit_config:/home/adithya/gz_ws/install/leg_assembly:/opt/openrobots:/opt/ros/humble /usr/bin/cmake --build /home/adithya/gz_ws/build/testbed_gazebo -- -j16 -l16
+[1.589s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/adithya/gz_ws/build/testbed_gazebo' returned '0': CMAKE_PREFIX_PATH=/home/adithya/gz_ws/install/testbed_description:/home/adithya/gz_ws/install/testbed_navigation:/home/adithya/gz_ws/install/testbed_gazebo:/home/adithya/gz_ws/install/testbed_bringup:/home/adithya/gz_ws/install/teleop_collision:/home/adithya/gz_ws/install/pointcloud_to_laserscan:/home/adithya/gz_ws/install/leg_assembly_moveit_config:/home/adithya/gz_ws/install/leg_assembly:/opt/openrobots:/opt/ros/humble /usr/bin/cmake --build /home/adithya/gz_ws/build/testbed_gazebo -- -j16 -l16
+[1.590s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/adithya/gz_ws/build/testbed_gazebo': CMAKE_PREFIX_PATH=/home/adithya/gz_ws/install/testbed_description:/home/adithya/gz_ws/install/testbed_navigation:/home/adithya/gz_ws/install/testbed_gazebo:/home/adithya/gz_ws/install/testbed_bringup:/home/adithya/gz_ws/install/teleop_collision:/home/adithya/gz_ws/install/pointcloud_to_laserscan:/home/adithya/gz_ws/install/leg_assembly_moveit_config:/home/adithya/gz_ws/install/leg_assembly:/opt/openrobots:/opt/ros/humble /usr/bin/cmake --install /home/adithya/gz_ws/build/testbed_gazebo
+[1.600s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(testbed_gazebo)
+[1.600s] Level 1:colcon.colcon_core.environment:checking '/home/adithya/gz_ws/install/testbed_gazebo' for CMake module files
+[1.601s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/adithya/gz_ws/build/testbed_gazebo' returned '0': CMAKE_PREFIX_PATH=/home/adithya/gz_ws/install/testbed_description:/home/adithya/gz_ws/install/testbed_navigation:/home/adithya/gz_ws/install/testbed_gazebo:/home/adithya/gz_ws/install/testbed_bringup:/home/adithya/gz_ws/install/teleop_collision:/home/adithya/gz_ws/install/pointcloud_to_laserscan:/home/adithya/gz_ws/install/leg_assembly_moveit_config:/home/adithya/gz_ws/install/leg_assembly:/opt/openrobots:/opt/ros/humble /usr/bin/cmake --install /home/adithya/gz_ws/build/testbed_gazebo
+[1.601s] Level 1:colcon.colcon_core.environment:checking '/home/adithya/gz_ws/install/testbed_gazebo' for CMake config files
+[1.602s] Level 1:colcon.colcon_core.shell:create_environment_hook('testbed_gazebo', 'cmake_prefix_path')
+[1.602s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/adithya/gz_ws/install/testbed_gazebo/share/testbed_gazebo/hook/cmake_prefix_path.ps1'
+[1.602s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/adithya/gz_ws/install/testbed_gazebo/share/testbed_gazebo/hook/cmake_prefix_path.dsv'
+[1.603s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/adithya/gz_ws/install/testbed_gazebo/share/testbed_gazebo/hook/cmake_prefix_path.sh'
+[1.603s] Level 1:colcon.colcon_core.environment:checking '/home/adithya/gz_ws/install/testbed_gazebo/bin'
+[1.603s] Level 1:colcon.colcon_core.environment:checking '/home/adithya/gz_ws/install/testbed_gazebo/lib/pkgconfig/testbed_gazebo.pc'
+[1.603s] Level 1:colcon.colcon_core.environment:checking '/home/adithya/gz_ws/install/testbed_gazebo/lib/python3.10/site-packages'
+[1.603s] Level 1:colcon.colcon_core.environment:checking '/home/adithya/gz_ws/install/testbed_gazebo/bin'
+[1.603s] INFO:colcon.colcon_core.shell:Creating package script '/home/adithya/gz_ws/install/testbed_gazebo/share/testbed_gazebo/package.ps1'
+[1.604s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/adithya/gz_ws/install/testbed_gazebo/share/testbed_gazebo/package.dsv'
+[1.604s] INFO:colcon.colcon_core.shell:Creating package script '/home/adithya/gz_ws/install/testbed_gazebo/share/testbed_gazebo/package.sh'
+[1.604s] INFO:colcon.colcon_core.shell:Creating package script '/home/adithya/gz_ws/install/testbed_gazebo/share/testbed_gazebo/package.bash'
+[1.604s] INFO:colcon.colcon_core.shell:Creating package script '/home/adithya/gz_ws/install/testbed_gazebo/share/testbed_gazebo/package.zsh'
+[1.605s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/adithya/gz_ws/install/testbed_gazebo/share/colcon-core/packages/testbed_gazebo)
+[1.605s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(testbed_gazebo)
+[1.605s] Level 1:colcon.colcon_core.environment:checking '/home/adithya/gz_ws/install/testbed_gazebo' for CMake module files
+[1.605s] Level 1:colcon.colcon_core.environment:checking '/home/adithya/gz_ws/install/testbed_gazebo' for CMake config files
+[1.605s] Level 1:colcon.colcon_core.shell:create_environment_hook('testbed_gazebo', 'cmake_prefix_path')
+[1.606s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/adithya/gz_ws/install/testbed_gazebo/share/testbed_gazebo/hook/cmake_prefix_path.ps1'
+[1.606s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/adithya/gz_ws/install/testbed_gazebo/share/testbed_gazebo/hook/cmake_prefix_path.dsv'
+[1.606s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/adithya/gz_ws/install/testbed_gazebo/share/testbed_gazebo/hook/cmake_prefix_path.sh'
+[1.606s] Level 1:colcon.colcon_core.environment:checking '/home/adithya/gz_ws/install/testbed_gazebo/bin'
+[1.606s] Level 1:colcon.colcon_core.environment:checking '/home/adithya/gz_ws/install/testbed_gazebo/lib/pkgconfig/testbed_gazebo.pc'
+[1.606s] Level 1:colcon.colcon_core.environment:checking '/home/adithya/gz_ws/install/testbed_gazebo/lib/python3.10/site-packages'
+[1.607s] Level 1:colcon.colcon_core.environment:checking '/home/adithya/gz_ws/install/testbed_gazebo/bin'
+[1.607s] INFO:colcon.colcon_core.shell:Creating package script '/home/adithya/gz_ws/install/testbed_gazebo/share/testbed_gazebo/package.ps1'
+[1.607s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/adithya/gz_ws/install/testbed_gazebo/share/testbed_gazebo/package.dsv'
+[1.607s] INFO:colcon.colcon_core.shell:Creating package script '/home/adithya/gz_ws/install/testbed_gazebo/share/testbed_gazebo/package.sh'
+[1.608s] INFO:colcon.colcon_core.shell:Creating package script '/home/adithya/gz_ws/install/testbed_gazebo/share/testbed_gazebo/package.bash'
+[1.608s] INFO:colcon.colcon_core.shell:Creating package script '/home/adithya/gz_ws/install/testbed_gazebo/share/testbed_gazebo/package.zsh'
+[1.608s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/adithya/gz_ws/install/testbed_gazebo/share/colcon-core/packages/testbed_gazebo)
+[19.300s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/adithya/gz_ws/build/pointcloud_to_laserscan' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/adithya/gz_ws/build/pointcloud_to_laserscan -- -j16 -l16
+[19.301s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/home/adithya/gz_ws/build/pointcloud_to_laserscan': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/adithya/gz_ws/build/pointcloud_to_laserscan
+[19.322s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(pointcloud_to_laserscan)
+[19.323s] Level 1:colcon.colcon_core.environment:checking '/home/adithya/gz_ws/install/pointcloud_to_laserscan' for CMake module files
+[19.323s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/home/adithya/gz_ws/build/pointcloud_to_laserscan' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/adithya/gz_ws/build/pointcloud_to_laserscan
+[19.323s] Level 1:colcon.colcon_core.environment:checking '/home/adithya/gz_ws/install/pointcloud_to_laserscan' for CMake config files
+[19.323s] Level 1:colcon.colcon_core.shell:create_environment_hook('pointcloud_to_laserscan', 'cmake_prefix_path')
+[19.323s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/adithya/gz_ws/install/pointcloud_to_laserscan/share/pointcloud_to_laserscan/hook/cmake_prefix_path.ps1'
+[19.324s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/adithya/gz_ws/install/pointcloud_to_laserscan/share/pointcloud_to_laserscan/hook/cmake_prefix_path.dsv'
+[19.324s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/adithya/gz_ws/install/pointcloud_to_laserscan/share/pointcloud_to_laserscan/hook/cmake_prefix_path.sh'
+[19.324s] Level 1:colcon.colcon_core.environment:checking '/home/adithya/gz_ws/install/pointcloud_to_laserscan/lib'
+[19.324s] Level 1:colcon.colcon_core.shell:create_environment_hook('pointcloud_to_laserscan', 'ld_library_path_lib')
+[19.325s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/adithya/gz_ws/install/pointcloud_to_laserscan/share/pointcloud_to_laserscan/hook/ld_library_path_lib.ps1'
+[19.325s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/adithya/gz_ws/install/pointcloud_to_laserscan/share/pointcloud_to_laserscan/hook/ld_library_path_lib.dsv'
+[19.325s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/adithya/gz_ws/install/pointcloud_to_laserscan/share/pointcloud_to_laserscan/hook/ld_library_path_lib.sh'
+[19.325s] Level 1:colcon.colcon_core.environment:checking '/home/adithya/gz_ws/install/pointcloud_to_laserscan/bin'
+[19.325s] Level 1:colcon.colcon_core.environment:checking '/home/adithya/gz_ws/install/pointcloud_to_laserscan/lib/pkgconfig/pointcloud_to_laserscan.pc'
+[19.325s] Level 1:colcon.colcon_core.environment:checking '/home/adithya/gz_ws/install/pointcloud_to_laserscan/lib/python3.10/site-packages'
+[19.326s] Level 1:colcon.colcon_core.environment:checking '/home/adithya/gz_ws/install/pointcloud_to_laserscan/bin'
+[19.326s] INFO:colcon.colcon_core.shell:Creating package script '/home/adithya/gz_ws/install/pointcloud_to_laserscan/share/pointcloud_to_laserscan/package.ps1'
+[19.326s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/adithya/gz_ws/install/pointcloud_to_laserscan/share/pointcloud_to_laserscan/package.dsv'
+[19.326s] INFO:colcon.colcon_core.shell:Creating package script '/home/adithya/gz_ws/install/pointcloud_to_laserscan/share/pointcloud_to_laserscan/package.sh'
+[19.327s] INFO:colcon.colcon_core.shell:Creating package script '/home/adithya/gz_ws/install/pointcloud_to_laserscan/share/pointcloud_to_laserscan/package.bash'
+[19.327s] INFO:colcon.colcon_core.shell:Creating package script '/home/adithya/gz_ws/install/pointcloud_to_laserscan/share/pointcloud_to_laserscan/package.zsh'
+[19.327s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/adithya/gz_ws/install/pointcloud_to_laserscan/share/colcon-core/packages/pointcloud_to_laserscan)
+[19.327s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(pointcloud_to_laserscan)
+[19.328s] Level 1:colcon.colcon_core.environment:checking '/home/adithya/gz_ws/install/pointcloud_to_laserscan' for CMake module files
+[19.328s] Level 1:colcon.colcon_core.environment:checking '/home/adithya/gz_ws/install/pointcloud_to_laserscan' for CMake config files
+[19.328s] Level 1:colcon.colcon_core.shell:create_environment_hook('pointcloud_to_laserscan', 'cmake_prefix_path')
+[19.328s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/adithya/gz_ws/install/pointcloud_to_laserscan/share/pointcloud_to_laserscan/hook/cmake_prefix_path.ps1'
+[19.328s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/adithya/gz_ws/install/pointcloud_to_laserscan/share/pointcloud_to_laserscan/hook/cmake_prefix_path.dsv'
+[19.329s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/adithya/gz_ws/install/pointcloud_to_laserscan/share/pointcloud_to_laserscan/hook/cmake_prefix_path.sh'
+[19.329s] Level 1:colcon.colcon_core.environment:checking '/home/adithya/gz_ws/install/pointcloud_to_laserscan/lib'
+[19.329s] Level 1:colcon.colcon_core.shell:create_environment_hook('pointcloud_to_laserscan', 'ld_library_path_lib')
+[19.329s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/adithya/gz_ws/install/pointcloud_to_laserscan/share/pointcloud_to_laserscan/hook/ld_library_path_lib.ps1'
+[19.329s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/home/adithya/gz_ws/install/pointcloud_to_laserscan/share/pointcloud_to_laserscan/hook/ld_library_path_lib.dsv'
+[19.330s] INFO:colcon.colcon_core.shell:Creating environment hook '/home/adithya/gz_ws/install/pointcloud_to_laserscan/share/pointcloud_to_laserscan/hook/ld_library_path_lib.sh'
+[19.330s] Level 1:colcon.colcon_core.environment:checking '/home/adithya/gz_ws/install/pointcloud_to_laserscan/bin'
+[19.330s] Level 1:colcon.colcon_core.environment:checking '/home/adithya/gz_ws/install/pointcloud_to_laserscan/lib/pkgconfig/pointcloud_to_laserscan.pc'
+[19.330s] Level 1:colcon.colcon_core.environment:checking '/home/adithya/gz_ws/install/pointcloud_to_laserscan/lib/python3.10/site-packages'
+[19.330s] Level 1:colcon.colcon_core.environment:checking '/home/adithya/gz_ws/install/pointcloud_to_laserscan/bin'
+[19.331s] INFO:colcon.colcon_core.shell:Creating package script '/home/adithya/gz_ws/install/pointcloud_to_laserscan/share/pointcloud_to_laserscan/package.ps1'
+[19.331s] INFO:colcon.colcon_core.shell:Creating package descriptor '/home/adithya/gz_ws/install/pointcloud_to_laserscan/share/pointcloud_to_laserscan/package.dsv'
+[19.332s] INFO:colcon.colcon_core.shell:Creating package script '/home/adithya/gz_ws/install/pointcloud_to_laserscan/share/pointcloud_to_laserscan/package.sh'
+[19.332s] INFO:colcon.colcon_core.shell:Creating package script '/home/adithya/gz_ws/install/pointcloud_to_laserscan/share/pointcloud_to_laserscan/package.bash'
+[19.332s] INFO:colcon.colcon_core.shell:Creating package script '/home/adithya/gz_ws/install/pointcloud_to_laserscan/share/pointcloud_to_laserscan/package.zsh'
+[19.333s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/home/adithya/gz_ws/install/pointcloud_to_laserscan/share/colcon-core/packages/pointcloud_to_laserscan)
+[19.333s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[19.333s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[19.333s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[19.333s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[19.337s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.terminal_notifier': Not used on non-Darwin systems
+[19.337s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_notification.desktop_notification.win32': Not used on non-Windows systems
+[19.337s] INFO:colcon.colcon_notification.desktop_notification:Sending desktop notification using 'notify2'
+[19.344s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[19.344s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/adithya/gz_ws/install/local_setup.ps1'
+[19.345s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/adithya/gz_ws/install/_local_setup_util_ps1.py'
+[19.346s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/adithya/gz_ws/install/setup.ps1'
+[19.347s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/adithya/gz_ws/install/local_setup.sh'
+[19.348s] INFO:colcon.colcon_core.shell:Creating prefix util module '/home/adithya/gz_ws/install/_local_setup_util_sh.py'
+[19.348s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/adithya/gz_ws/install/setup.sh'
+[19.349s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/adithya/gz_ws/install/local_setup.bash'
+[19.350s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/adithya/gz_ws/install/setup.bash'
+[19.351s] INFO:colcon.colcon_core.shell:Creating prefix script '/home/adithya/gz_ws/install/local_setup.zsh'
+[19.351s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/home/adithya/gz_ws/install/setup.zsh'

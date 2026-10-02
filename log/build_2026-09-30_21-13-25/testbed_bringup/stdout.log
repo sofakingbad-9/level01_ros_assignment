@@ -1,0 +1,29 @@
+-- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)
+-- Override CMake install command with custom implementation using symlinks instead of copying resources
+-- Found rclpy: 3.3.21 (/opt/ros/humble/share/rclpy/cmake)
+-- Found ament_lint_auto: 0.12.15 (/opt/ros/humble/share/ament_lint_auto/cmake)
+-- Added test 'flake8' to check Python code syntax and style conventions
+-- Added test 'lint_cmake' to check CMake code style
+-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257
+-- Added test 'xmllint' to check XML markup files
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/adithya/gz_ws/build/testbed_bringup
+-- Install configuration: ""
+-- Execute custom install script
+-- Symlinking: /home/adithya/gz_ws/install/testbed_bringup/share/testbed_bringup//launch/testbed_full_bringup.launch.py
+-- Symlinking: /home/adithya/gz_ws/install/testbed_bringup/share/ament_index/resource_index/package_run_dependencies/testbed_bringup
+-- Symlinking: /home/adithya/gz_ws/install/testbed_bringup/share/ament_index/resource_index/parent_prefix_path/testbed_bringup
+-- Symlinking: /home/adithya/gz_ws/install/testbed_bringup/share/testbed_bringup/environment/ament_prefix_path.sh
+-- Symlinking: /home/adithya/gz_ws/install/testbed_bringup/share/testbed_bringup/environment/ament_prefix_path.dsv
+-- Symlinking: /home/adithya/gz_ws/install/testbed_bringup/share/testbed_bringup/environment/path.sh
+-- Symlinking: /home/adithya/gz_ws/install/testbed_bringup/share/testbed_bringup/environment/path.dsv
+-- Symlinking: /home/adithya/gz_ws/install/testbed_bringup/share/testbed_bringup/local_setup.bash
+-- Symlinking: /home/adithya/gz_ws/install/testbed_bringup/share/testbed_bringup/local_setup.sh
+-- Symlinking: /home/adithya/gz_ws/install/testbed_bringup/share/testbed_bringup/local_setup.zsh
+-- Symlinking: /home/adithya/gz_ws/install/testbed_bringup/share/testbed_bringup/local_setup.dsv
+-- Symlinking: /home/adithya/gz_ws/install/testbed_bringup/share/testbed_bringup/package.dsv
+-- Symlinking: /home/adithya/gz_ws/install/testbed_bringup/share/ament_index/resource_index/packages/testbed_bringup
+-- Symlinking: /home/adithya/gz_ws/install/testbed_bringup/share/testbed_bringup/cmake/testbed_bringupConfig.cmake
+-- Symlinking: /home/adithya/gz_ws/install/testbed_bringup/share/testbed_bringup/cmake/testbed_bringupConfig-version.cmake
+-- Symlinking: /home/adithya/gz_ws/install/testbed_bringup/share/testbed_bringup/package.xml

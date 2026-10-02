@@ -1,0 +1,1 @@
+/home/adithya/gz_ws/build/testbed_gazebo/ament_cmake_environment_hooks/local_setup.zsh

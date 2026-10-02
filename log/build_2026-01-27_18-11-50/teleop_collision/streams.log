@@ -1,0 +1,79 @@
+[0.006s] Invoking command in '/home/adithya/gz_ws/build/teleop_collision': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/adithya/gz_ws/src/teleop_collision -DCMAKE_INSTALL_PREFIX=/home/adithya/gz_ws/install/teleop_collision
+[0.244s] -- The C compiler identification is GNU 11.4.0
+[0.307s] -- The CXX compiler identification is GNU 11.4.0
+[0.313s] -- Detecting C compiler ABI info
+[0.433s] -- Detecting C compiler ABI info - done
+[0.444s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.444s] -- Detecting C compile features
+[0.445s] -- Detecting C compile features - done
+[0.447s] -- Detecting CXX compiler ABI info
+[0.531s] -- Detecting CXX compiler ABI info - done
+[0.540s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.540s] -- Detecting CXX compile features
+[0.541s] -- Detecting CXX compile features - done
+[0.544s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.655s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.725s] -- Found rclcpp: 16.0.16 (/opt/ros/humble/share/rclcpp/cmake)
+[0.758s] -- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.762s] -- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.769s] -- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.778s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.792s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.824s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.826s] -- Found rmw_fastrtps_cpp: 6.2.9 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.907s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[0.934s] -- Found FastRTPS: /opt/ros/humble/include  
+[0.964s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.971s] -- Looking for pthread.h
+[1.044s] -- Looking for pthread.h - found
+[1.044s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[1.109s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[1.111s] -- Found Threads: TRUE  
+[1.149s] -- Found moveit_core: 2.5.9 (/opt/ros/humble/share/moveit_core/cmake)
+[1.183s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: chrono date_time filesystem iostreams program_options regex serialization system thread 
+[1.236s] -- Found parameter_traits: 0.5.0 (/opt/ros/humble/share/parameter_traits/cmake)
+[1.261s] -- Found rclcpp_lifecycle: 16.0.16 (/opt/ros/humble/share/rclcpp_lifecycle/cmake)
+[1.281s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: filesystem 
+[1.373s] -- library: /usr/lib/x86_64-linux-gnu/libcurl.so
+[1.459s] -- Found Eigen3: TRUE (found version "3.4.0") 
+[1.459s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[1.760s] -- Found moveit_ros_planning: 2.5.9 (/opt/ros/humble/share/moveit_ros_planning/cmake)
+[1.765s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: system filesystem date_time program_options thread chrono 
+[1.787s] -- Found moveit_ros_planning_interface: 2.5.9 (/opt/ros/humble/share/moveit_ros_planning_interface/cmake)
+[1.791s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: date_time filesystem program_options system thread 
+[1.804s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: thread system filesystem regex date_time program_options 
+[1.825s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found version "1.74.0") found components: system filesystem date_time program_options thread 
+[1.859s] -- Found ament_lint_auto: 0.12.14 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[1.906s] -- Configuring done
+[1.924s] -- Generating done
+[1.929s] -- Build files have been written to: /home/adithya/gz_ws/build/teleop_collision
+[1.940s] Invoked command in '/home/adithya/gz_ws/build/teleop_collision' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/adithya/gz_ws/src/teleop_collision -DCMAKE_INSTALL_PREFIX=/home/adithya/gz_ws/install/teleop_collision
+[1.941s] Invoking command in '/home/adithya/gz_ws/build/teleop_collision': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/adithya/gz_ws/build/teleop_collision -- -j16 -l16
+[1.999s] [ 50%] [32mBuilding CXX object CMakeFiles/teleop_collision.dir/src/teleop_collision.cpp.o[0m
+[6.074s] [01m[K/home/adithya/gz_ws/src/teleop_collision/src/teleop_collision.cpp:[m[K In member function ‘[01m[Kvoid TeleopWithCollision::JoyCallback(sensor_msgs::msg::Joy_<std::allocator<void> >::SharedPtr)[m[K’:
+[6.074s] [01m[K/home/adithya/gz_ws/src/teleop_collision/src/teleop_collision.cpp:93:7:[m[K [01;35m[Kwarning: [m[Kstatement has no effect [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-value-Wunused-value]8;;[m[K]
+[6.074s]    93 |       [01;35m[K0.0[m[K;
+[6.074s]       |       [01;35m[K^~~[m[K
+[14.300s] [100%] [32m[1mLinking CXX executable teleop_collision[0m
+[14.991s] [100%] Built target teleop_collision
+[15.000s] Invoked command in '/home/adithya/gz_ws/build/teleop_collision' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/adithya/gz_ws/build/teleop_collision -- -j16 -l16
+[15.002s] Invoking command in '/home/adithya/gz_ws/build/teleop_collision': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/adithya/gz_ws/build/teleop_collision
+[15.007s] -- Install configuration: ""
+[15.008s] -- Installing: /home/adithya/gz_ws/install/teleop_collision/lib/teleop_collision/teleop_collision
+[15.011s] -- Set runtime path of "/home/adithya/gz_ws/install/teleop_collision/lib/teleop_collision/teleop_collision" to ""
+[15.011s] -- Installing: /home/adithya/gz_ws/install/teleop_collision/share/ament_index/resource_index/package_run_dependencies/teleop_collision
+[15.011s] -- Installing: /home/adithya/gz_ws/install/teleop_collision/share/ament_index/resource_index/parent_prefix_path/teleop_collision
+[15.011s] -- Installing: /home/adithya/gz_ws/install/teleop_collision/share/teleop_collision/environment/ament_prefix_path.sh
+[15.011s] -- Installing: /home/adithya/gz_ws/install/teleop_collision/share/teleop_collision/environment/ament_prefix_path.dsv
+[15.011s] -- Installing: /home/adithya/gz_ws/install/teleop_collision/share/teleop_collision/environment/path.sh
+[15.011s] -- Installing: /home/adithya/gz_ws/install/teleop_collision/share/teleop_collision/environment/path.dsv
+[15.011s] -- Installing: /home/adithya/gz_ws/install/teleop_collision/share/teleop_collision/local_setup.bash
+[15.011s] -- Installing: /home/adithya/gz_ws/install/teleop_collision/share/teleop_collision/local_setup.sh
+[15.011s] -- Installing: /home/adithya/gz_ws/install/teleop_collision/share/teleop_collision/local_setup.zsh
+[15.011s] -- Installing: /home/adithya/gz_ws/install/teleop_collision/share/teleop_collision/local_setup.dsv
+[15.011s] -- Installing: /home/adithya/gz_ws/install/teleop_collision/share/teleop_collision/package.dsv
+[15.011s] -- Installing: /home/adithya/gz_ws/install/teleop_collision/share/ament_index/resource_index/packages/teleop_collision
+[15.011s] -- Installing: /home/adithya/gz_ws/install/teleop_collision/share/teleop_collision/cmake/teleop_collisionConfig.cmake
+[15.012s] -- Installing: /home/adithya/gz_ws/install/teleop_collision/share/teleop_collision/cmake/teleop_collisionConfig-version.cmake
+[15.012s] -- Installing: /home/adithya/gz_ws/install/teleop_collision/share/teleop_collision/package.xml
+[15.014s] Invoked command in '/home/adithya/gz_ws/build/teleop_collision' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/adithya/gz_ws/build/teleop_collision

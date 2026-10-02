@@ -1,0 +1,4 @@
+Invoking command in '/home/adithya/gz_ws/build/teleop_collision': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/adithya/gz_ws/build/teleop_collision -- -j16 -l16
+Invoked command in '/home/adithya/gz_ws/build/teleop_collision' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/adithya/gz_ws/build/teleop_collision -- -j16 -l16
+Invoking command in '/home/adithya/gz_ws/build/teleop_collision': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/adithya/gz_ws/build/teleop_collision
+Invoked command in '/home/adithya/gz_ws/build/teleop_collision' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/adithya/gz_ws/build/teleop_collision

@@ -1,0 +1,68 @@
+[0.008s] Invoking command in '/home/adithya/gz_ws/build/teleop_collision': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/adithya/gz_ws/build/teleop_collision -- -j16 -l16
+[0.057s] [35m[1mConsolidate compiler generated dependencies of target teleop_collision[0m
+[0.079s] [ 50%] [32mBuilding CXX object CMakeFiles/teleop_collision.dir/src/teleop_collision.cpp.o[0m
+[4.243s] [01m[K/home/adithya/gz_ws/src/teleop_collision/src/teleop_collision.cpp:[m[K In constructor ‘[01m[KTeleopWithCollision::TeleopWithCollision()[m[K’:
+[4.243s] [01m[K/home/adithya/gz_ws/src/teleop_collision/src/teleop_collision.cpp:53:7:[m[K [01;31m[Kerror: [m[K‘[01m[Kgripper_client_[m[K’ was not declared in this scope
+[4.243s]    53 |       [01;31m[Kgripper_client_[m[K =
+[4.243s]       |       [01;31m[K^~~~~~~~~~~~~~~[m[K
+[4.251s] [01m[K/home/adithya/gz_ws/src/teleop_collision/src/teleop_collision.cpp:54:50:[m[K [01;31m[Kerror: [m[K‘[01m[Kcontrol_msgs[m[K’ was not declared in this scope
+[4.252s]    54 |                     rclcpp_action::create_client<[01;31m[Kcontrol_msgs[m[K::action::GripperCommand>(
+[4.252s]       |                                                  [01;31m[K^~~~~~~~~~~~[m[K
+[4.252s] [01m[K/home/adithya/gz_ws/src/teleop_collision/src/teleop_collision.cpp:54:36:[m[K [01;31m[Kerror: [m[Kparse error in template argument list
+[4.252s]    54 |                     rclcpp_action::[01;31m[Kcreate_client<control_msgs::action::GripperCommand>[m[K(
+[4.252s]       |                                    [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[4.252s] [01m[K/home/adithya/gz_ws/src/teleop_collision/src/teleop_collision.cpp:54:87:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kcreate_client<<expression error> >(TeleopWithCollision*, const char [29])[m[K’
+[4.252s]    54 |     [01;31m[Krclcpp_action::create_client<control_msgs::action::GripperCommand>([m[K
+[4.252s]       |     [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^[m[K
+[4.252s] 
+[4.252s]    55 | [01;31m[K      this,[m[K
+[4.252s]       |       [01;31m[K~~~~~[m[K                                                            
+[4.252s] 
+[4.252s]    56 | [01;31m[K      "/hand_controller/gripper_cmd"[m[K
+[4.252s]       |       [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K                                   
+[4.252s] 
+[4.252s]    57 | 
+[4.252s]       |                                                                        
+[4.252s] 
+[4.252s] In file included from [01m[K/opt/ros/humble/include/rclcpp_action/rclcpp_action/rclcpp_action.hpp:38[m[K,
+[4.252s]                  from [01m[K/home/adithya/gz_ws/src/teleop_collision/src/teleop_collision.cpp:7[m[K:
+[4.252s] [01m[K/opt/ros/humble/include/rclcpp_action/rclcpp_action/create_client.hpp:44:1:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class ActionT> typename rclcpp_action::Client<ActionT>::SharedPtr rclcpp_action::create_client(rclcpp::node_interfaces::NodeBaseInterface::SharedPtr, rclcpp::node_interfaces::NodeGraphInterface::SharedPtr, rclcpp::node_interfaces::NodeLoggingInterface::SharedPtr, rclcpp::node_interfaces::NodeWaitablesInterface::SharedPtr, const string&, rclcpp::CallbackGroup::SharedPtr, const rcl_action_client_options_t&)[m[K’
+[4.252s]    44 | [01;36m[Kcreate_client[m[K(
+[4.252s]       | [01;36m[K^~~~~~~~~~~~~[m[K
+[4.252s] [01m[K/opt/ros/humble/include/rclcpp_action/rclcpp_action/create_client.hpp:44:1:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[4.252s] [01m[K/home/adithya/gz_ws/src/teleop_collision/src/teleop_collision.cpp:54:87:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[4.252s]    54 |     [01;31m[Krclcpp_action::create_client<control_msgs::action::GripperCommand>([m[K
+[4.252s]       |     [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^[m[K
+[4.252s] 
+[4.252s]    55 | [01;31m[K      this,[m[K
+[4.252s]       |       [01;31m[K~~~~~[m[K                                                            
+[4.252s] 
+[4.252s]    56 | [01;31m[K      "/hand_controller/gripper_cmd"[m[K
+[4.252s]       |       [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K                                   
+[4.252s] 
+[4.252s]    57 | 
+[4.252s]       |                                                                        
+[4.253s] 
+[4.253s] In file included from [01m[K/opt/ros/humble/include/rclcpp_action/rclcpp_action/rclcpp_action.hpp:38[m[K,
+[4.253s]                  from [01m[K/home/adithya/gz_ws/src/teleop_collision/src/teleop_collision.cpp:7[m[K:
+[4.253s] [01m[K/opt/ros/humble/include/rclcpp_action/rclcpp_action/create_client.hpp:105:1:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class ActionT, class NodeT> typename rclcpp_action::Client<ActionT>::SharedPtr rclcpp_action::create_client(NodeT, const string&, rclcpp::CallbackGroup::SharedPtr, const rcl_action_client_options_t&)[m[K’
+[4.253s]   105 | [01;36m[Kcreate_client[m[K(
+[4.253s]       | [01;36m[K^~~~~~~~~~~~~[m[K
+[4.253s] [01m[K/opt/ros/humble/include/rclcpp_action/rclcpp_action/create_client.hpp:105:1:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[4.253s] [01m[K/home/adithya/gz_ws/src/teleop_collision/src/teleop_collision.cpp:54:87:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+[4.253s]    54 |     [01;31m[Krclcpp_action::create_client<control_msgs::action::GripperCommand>([m[K
+[4.253s]       |     [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^[m[K
+[4.253s] 
+[4.253s]    55 | [01;31m[K      this,[m[K
+[4.253s]       |       [01;31m[K~~~~~[m[K                                                            
+[4.253s] 
+[4.253s]    56 | [01;31m[K      "/hand_controller/gripper_cmd"[m[K
+[4.253s]       |       [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K                                   
+[4.253s] 
+[4.253s]    57 | 
+[4.253s]       |                                                                        
+[4.253s] 
+[8.109s] gmake[2]: *** [CMakeFiles/teleop_collision.dir/build.make:76: CMakeFiles/teleop_collision.dir/src/teleop_collision.cpp.o] Error 1
+[8.109s] gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/teleop_collision.dir/all] Error 2
+[8.109s] gmake: *** [Makefile:146: all] Error 2
+[8.111s] Invoked command in '/home/adithya/gz_ws/build/teleop_collision' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/adithya/gz_ws/build/teleop_collision -- -j16 -l16

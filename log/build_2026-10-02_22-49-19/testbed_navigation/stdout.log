@@ -1,0 +1,15 @@
+-- Install configuration: ""
+-- Up-to-date: /home/adithya/gz_ws/install/testbed_navigation/share/testbed_navigation//launch
+-- Up-to-date: /home/adithya/gz_ws/install/testbed_navigation/share/testbed_navigation//launch/navigation.launch.py
+-- Up-to-date: /home/adithya/gz_ws/install/testbed_navigation/share/testbed_navigation//worlds
+-- Up-to-date: /home/adithya/gz_ws/install/testbed_navigation/share/testbed_navigation//meshes
+-- Up-to-date: /home/adithya/gz_ws/install/testbed_navigation/share/testbed_navigation//urdf
+-- Up-to-date: /home/adithya/gz_ws/install/testbed_navigation/share/testbed_navigation//maps
+-- Up-to-date: /home/adithya/gz_ws/install/testbed_navigation/share/testbed_navigation//rviz
+-- Up-to-date: /home/adithya/gz_ws/install/testbed_navigation/share/testbed_navigation//rviz/map_loader_config.rviz
+-- Up-to-date: /home/adithya/gz_ws/install/testbed_navigation/share/testbed_navigation//config
+-- Up-to-date: /home/adithya/gz_ws/install/testbed_navigation/share/testbed_navigation//config/nav2_params.yaml
+-- Up-to-date: /home/adithya/gz_ws/install/testbed_navigation/share/testbed_navigation//config/map_loader_config.rviz
+-- Up-to-date: /home/adithya/gz_ws/install/testbed_navigation/share/testbed_navigation//config/amcl.yaml
+-- Up-to-date: /home/adithya/gz_ws/install/testbed_navigation/share/testbed_navigation//config/pointcloud_conv.yaml
+-- Installing: /home/adithya/gz_ws/install/testbed_navigation/share/testbed_navigation/package.dsv

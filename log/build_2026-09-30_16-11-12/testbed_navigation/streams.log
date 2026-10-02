@@ -1,0 +1,51 @@
+[0.009s] Invoking command in '/home/adithya/gz_ws/build/testbed_navigation': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/adithya/gz_ws/src/testbed_navigation -DCMAKE_INSTALL_PREFIX=/home/adithya/gz_ws/install/testbed_navigation
+[0.015s] -- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.106s] -- Found rclpy: 3.3.21 (/opt/ros/humble/share/rclpy/cmake)
+[0.109s] -- Found urdf: 2.6.1 (/opt/ros/humble/share/urdf/cmake)
+[0.173s] -- Found lifecycle_msgs: 1.2.2 (/opt/ros/humble/share/lifecycle_msgs/cmake)
+[0.205s] -- Found rosidl_generator_c: 3.1.8 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.212s] -- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.224s] -- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.241s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.256s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.276s] -- Found nav_msgs: 4.9.1 (/opt/ros/humble/share/nav_msgs/cmake)
+[0.345s] -- Found nav2_common: 1.1.20 (/opt/ros/humble/share/nav2_common/cmake)
+[0.348s] -- Found nav2_msgs: 1.1.20 (/opt/ros/humble/share/nav2_msgs/cmake)
+[0.406s] -- Found nav2_util: 1.1.20 (/opt/ros/humble/share/nav2_util/cmake)
+[0.489s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.493s] -- Found rmw_fastrtps_cpp: 6.2.10 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.530s] -- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND
+[0.612s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[0.618s] -- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND
+[0.634s] -- Found FastRTPS: /opt/ros/humble/include  
+[0.638s] -- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND
+[0.644s] -- Found TinyXML2 via Config file: TinyXML2_DIR-NOTFOUND
+[0.651s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[0.670s] -- Looking for pthread.h
+[0.773s] -- Looking for pthread.h - found
+[0.773s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[0.852s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[0.854s] -- Found Threads: TRUE  
+[1.001s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+[1.004s] -- Found Eigen3: TRUE (found version "3.4.0") 
+[1.004s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[1.057s] -- Configuring incomplete, errors occurred!
+[1.057s] See also "/home/adithya/gz_ws/build/testbed_navigation/CMakeFiles/CMakeOutput.log".
+[1.057s] [31mCMake Error at CMakeLists.txt:23 (find_package):
+[1.057s]   By not providing "Findnav2_ros_common.cmake" in CMAKE_MODULE_PATH this
+[1.057s]   project has asked CMake to find a package configuration file provided by
+[1.057s]   "nav2_ros_common", but CMake did not find one.
+[1.057s] 
+[1.057s]   Could not find a package configuration file provided by "nav2_ros_common"
+[1.057s]   with any of the following names:
+[1.057s] 
+[1.057s]     nav2_ros_commonConfig.cmake
+[1.057s]     nav2_ros_common-config.cmake
+[1.057s] 
+[1.057s]   Add the installation prefix of "nav2_ros_common" to CMAKE_PREFIX_PATH or
+[1.057s]   set "nav2_ros_common_DIR" to a directory containing one of the above files.
+[1.058s]   If "nav2_ros_common" provides a separate development package or SDK, be
+[1.058s]   sure it has been installed.
+[1.058s] 
+[1.058s] [0m
+[1.061s] Invoked command in '/home/adithya/gz_ws/build/testbed_navigation' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/adithya/gz_ws/src/testbed_navigation -DCMAKE_INSTALL_PREFIX=/home/adithya/gz_ws/install/testbed_navigation

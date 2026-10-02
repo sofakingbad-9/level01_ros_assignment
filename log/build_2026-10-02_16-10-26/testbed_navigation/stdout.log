@@ -1,0 +1,10 @@
+-- Install configuration: ""
+-- Up-to-date: /home/adithya/gz_ws/install/testbed_navigation/share/testbed_navigation//launch
+-- Installing: /home/adithya/gz_ws/install/testbed_navigation/share/testbed_navigation//launch/navigation.launch.py
+-- Up-to-date: /home/adithya/gz_ws/install/testbed_navigation/share/testbed_navigation//worlds
+-- Up-to-date: /home/adithya/gz_ws/install/testbed_navigation/share/testbed_navigation//meshes
+-- Up-to-date: /home/adithya/gz_ws/install/testbed_navigation/share/testbed_navigation//urdf
+-- Up-to-date: /home/adithya/gz_ws/install/testbed_navigation/share/testbed_navigation//maps
+-- Up-to-date: /home/adithya/gz_ws/install/testbed_navigation/share/testbed_navigation//rviz
+-- Installing: /home/adithya/gz_ws/install/testbed_navigation/share/testbed_navigation//rviz/map_loader_config.rviz
+-- Installing: /home/adithya/gz_ws/install/testbed_navigation/share/testbed_navigation/package.dsv

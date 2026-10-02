@@ -1,0 +1,18 @@
+[100%] Built target teleop_collision
+-- Install configuration: ""
+-- Up-to-date: /home/adithya/gz_ws/install/teleop_collision/lib/teleop_collision/teleop_collision
+-- Up-to-date: /home/adithya/gz_ws/install/teleop_collision/share/ament_index/resource_index/package_run_dependencies/teleop_collision
+-- Up-to-date: /home/adithya/gz_ws/install/teleop_collision/share/ament_index/resource_index/parent_prefix_path/teleop_collision
+-- Up-to-date: /home/adithya/gz_ws/install/teleop_collision/share/teleop_collision/environment/ament_prefix_path.sh
+-- Up-to-date: /home/adithya/gz_ws/install/teleop_collision/share/teleop_collision/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/adithya/gz_ws/install/teleop_collision/share/teleop_collision/environment/path.sh
+-- Up-to-date: /home/adithya/gz_ws/install/teleop_collision/share/teleop_collision/environment/path.dsv
+-- Up-to-date: /home/adithya/gz_ws/install/teleop_collision/share/teleop_collision/local_setup.bash
+-- Up-to-date: /home/adithya/gz_ws/install/teleop_collision/share/teleop_collision/local_setup.sh
+-- Up-to-date: /home/adithya/gz_ws/install/teleop_collision/share/teleop_collision/local_setup.zsh
+-- Up-to-date: /home/adithya/gz_ws/install/teleop_collision/share/teleop_collision/local_setup.dsv
+-- Installing: /home/adithya/gz_ws/install/teleop_collision/share/teleop_collision/package.dsv
+-- Up-to-date: /home/adithya/gz_ws/install/teleop_collision/share/ament_index/resource_index/packages/teleop_collision
+-- Up-to-date: /home/adithya/gz_ws/install/teleop_collision/share/teleop_collision/cmake/teleop_collisionConfig.cmake
+-- Up-to-date: /home/adithya/gz_ws/install/teleop_collision/share/teleop_collision/cmake/teleop_collisionConfig-version.cmake
+-- Up-to-date: /home/adithya/gz_ws/install/teleop_collision/share/teleop_collision/package.xml

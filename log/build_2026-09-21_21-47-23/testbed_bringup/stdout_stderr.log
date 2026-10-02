@@ -1,0 +1,18 @@
+-- Install configuration: ""
+-- Installing: /home/adithya/gz_ws/install/testbed_bringup/share/testbed_bringup//launch
+-- Installing: /home/adithya/gz_ws/install/testbed_bringup/share/testbed_bringup//launch/testbed_full_bringup.launch.py
+-- Installing: /home/adithya/gz_ws/install/testbed_bringup/share/ament_index/resource_index/package_run_dependencies/testbed_bringup
+-- Installing: /home/adithya/gz_ws/install/testbed_bringup/share/ament_index/resource_index/parent_prefix_path/testbed_bringup
+-- Installing: /home/adithya/gz_ws/install/testbed_bringup/share/testbed_bringup/environment/ament_prefix_path.sh
+-- Installing: /home/adithya/gz_ws/install/testbed_bringup/share/testbed_bringup/environment/ament_prefix_path.dsv
+-- Installing: /home/adithya/gz_ws/install/testbed_bringup/share/testbed_bringup/environment/path.sh
+-- Installing: /home/adithya/gz_ws/install/testbed_bringup/share/testbed_bringup/environment/path.dsv
+-- Installing: /home/adithya/gz_ws/install/testbed_bringup/share/testbed_bringup/local_setup.bash
+-- Installing: /home/adithya/gz_ws/install/testbed_bringup/share/testbed_bringup/local_setup.sh
+-- Installing: /home/adithya/gz_ws/install/testbed_bringup/share/testbed_bringup/local_setup.zsh
+-- Installing: /home/adithya/gz_ws/install/testbed_bringup/share/testbed_bringup/local_setup.dsv
+-- Installing: /home/adithya/gz_ws/install/testbed_bringup/share/testbed_bringup/package.dsv
+-- Installing: /home/adithya/gz_ws/install/testbed_bringup/share/ament_index/resource_index/packages/testbed_bringup
+-- Installing: /home/adithya/gz_ws/install/testbed_bringup/share/testbed_bringup/cmake/testbed_bringupConfig.cmake
+-- Installing: /home/adithya/gz_ws/install/testbed_bringup/share/testbed_bringup/cmake/testbed_bringupConfig-version.cmake
+-- Installing: /home/adithya/gz_ws/install/testbed_bringup/share/testbed_bringup/package.xml

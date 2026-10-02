@@ -1,0 +1,105 @@
+[01m[K/home/adithya/gz_ws/src/teleop_collision/src/teleop_collision.cpp:237:27:[m[K [01;31m[Kerror: [m[K‘[01m[Kcontrol_msgs[m[K’ was not declared in this scope
+  237 |     rclcpp_action::Client<[01;31m[Kcontrol_msgs[m[K::action::GripperCommand>::SharedPtr gripper_client_;
+      |                           [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/adithya/gz_ws/src/teleop_collision/src/teleop_collision.cpp:237:63:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+  237 |   rclcpp_action::Client<control_msgs::action::GripperCommand[01;31m[K>[m[K::SharedPtr gripper_client_;
+      |                                                             [01;31m[K^[m[K
+
+[01m[K/home/adithya/gz_ws/src/teleop_collision/src/teleop_collision.cpp:237:66:[m[K [01;31m[Kerror: [m[Kexpected ‘[01m[K;[m[K’ at end of member declaration
+  237 | clcpp_action::Client<control_msgs::action::GripperCommand>::[01;31m[KSharedPtr[m[K gripper_client_;
+      |                                                             [01;31m[K^~~~~~~~~[m[K
+      |                                                                      [32m[K;[m[K
+[01m[K/home/adithya/gz_ws/src/teleop_collision/src/teleop_collision.cpp:237:76:[m[K [01;31m[Kerror: [m[K‘[01m[Kgripper_client_[m[K’ does not name a type
+  237 | on::Client<control_msgs::action::GripperCommand>::SharedPtr [01;31m[Kgripper_client_[m[K;
+      |                                                             [01;31m[K^~~~~~~~~~~~~~~[m[K
+
+[01m[K/home/adithya/gz_ws/src/teleop_collision/src/teleop_collision.cpp:[m[K In constructor ‘[01m[KTeleopWithCollision::TeleopWithCollision()[m[K’:
+[01m[K/home/adithya/gz_ws/src/teleop_collision/src/teleop_collision.cpp:53:7:[m[K [01;31m[Kerror: [m[K‘[01m[Kgripper_client_[m[K’ was not declared in this scope
+   53 |       [01;31m[Kgripper_client_[m[K =
+      |       [01;31m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/home/adithya/gz_ws/src/teleop_collision/src/teleop_collision.cpp:54:50:[m[K [01;31m[Kerror: [m[K‘[01m[Kcontrol_msgs[m[K’ was not declared in this scope
+   54 |                     rclcpp_action::create_client<[01;31m[Kcontrol_msgs[m[K::action::GripperCommand>(
+      |                                                  [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/adithya/gz_ws/src/teleop_collision/src/teleop_collision.cpp:54:36:[m[K [01;31m[Kerror: [m[Kparse error in template argument list
+   54 |                     rclcpp_action::[01;31m[Kcreate_client<control_msgs::action::GripperCommand>[m[K(
+      |                                    [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[01m[K/home/adithya/gz_ws/src/teleop_collision/src/teleop_collision.cpp:54:87:[m[K [01;31m[Kerror: [m[Kno matching function for call to ‘[01m[Kcreate_client<<expression error> >(TeleopWithCollision*, const char [29])[m[K’
+   54 |     [01;31m[Krclcpp_action::create_client<control_msgs::action::GripperCommand>([m[K
+      |     [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^[m[K
+
+   55 | [01;31m[K      this,[m[K
+      |       [01;31m[K~~~~~[m[K                                                            
+
+   56 | [01;31m[K      "/hand_controller/gripper_cmd"[m[K
+      |       [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K                                   
+
+   57 | 
+      |                                                                        
+
+In file included from [01m[K/opt/ros/humble/include/rclcpp_action/rclcpp_action/rclcpp_action.hpp:38[m[K,
+                 from [01m[K/home/adithya/gz_ws/src/teleop_collision/src/teleop_collision.cpp:7[m[K:
+[01m[K/opt/ros/humble/include/rclcpp_action/rclcpp_action/create_client.hpp:44:1:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class ActionT> typename rclcpp_action::Client<ActionT>::SharedPtr rclcpp_action::create_client(rclcpp::node_interfaces::NodeBaseInterface::SharedPtr, rclcpp::node_interfaces::NodeGraphInterface::SharedPtr, rclcpp::node_interfaces::NodeLoggingInterface::SharedPtr, rclcpp::node_interfaces::NodeWaitablesInterface::SharedPtr, const string&, rclcpp::CallbackGroup::SharedPtr, const rcl_action_client_options_t&)[m[K’
+   44 | [01;36m[Kcreate_client[m[K(
+      | [01;36m[K^~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/humble/include/rclcpp_action/rclcpp_action/create_client.hpp:44:1:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/adithya/gz_ws/src/teleop_collision/src/teleop_collision.cpp:54:87:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   54 |     [01;31m[Krclcpp_action::create_client<control_msgs::action::GripperCommand>([m[K
+      |     [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^[m[K
+
+   55 | [01;31m[K      this,[m[K
+      |       [01;31m[K~~~~~[m[K                                                            
+
+   56 | [01;31m[K      "/hand_controller/gripper_cmd"[m[K
+      |       [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K                                   
+
+   57 | 
+      |                                                                        
+
+In file included from [01m[K/opt/ros/humble/include/rclcpp_action/rclcpp_action/rclcpp_action.hpp:38[m[K,
+                 from [01m[K/home/adithya/gz_ws/src/teleop_collision/src/teleop_collision.cpp:7[m[K:
+[01m[K/opt/ros/humble/include/rclcpp_action/rclcpp_action/create_client.hpp:105:1:[m[K [01;36m[Knote: [m[Kcandidate: ‘[01m[Ktemplate<class ActionT, class NodeT> typename rclcpp_action::Client<ActionT>::SharedPtr rclcpp_action::create_client(NodeT, const string&, rclcpp::CallbackGroup::SharedPtr, const rcl_action_client_options_t&)[m[K’
+  105 | [01;36m[Kcreate_client[m[K(
+      | [01;36m[K^~~~~~~~~~~~~[m[K
+[01m[K/opt/ros/humble/include/rclcpp_action/rclcpp_action/create_client.hpp:105:1:[m[K [01;36m[Knote: [m[K  template argument deduction/substitution failed:
+[01m[K/home/adithya/gz_ws/src/teleop_collision/src/teleop_collision.cpp:54:87:[m[K [01;31m[Kerror: [m[Ktemplate argument 1 is invalid
+   54 |     [01;31m[Krclcpp_action::create_client<control_msgs::action::GripperCommand>([m[K
+      |     [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^[m[K
+
+   55 | [01;31m[K      this,[m[K
+      |       [01;31m[K~~~~~[m[K                                                            
+
+   56 | [01;31m[K      "/hand_controller/gripper_cmd"[m[K
+      |       [01;31m[K~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K                                   
+
+   57 | 
+      |                                                                        
+
+[01m[K/home/adithya/gz_ws/src/teleop_collision/src/teleop_collision.cpp:[m[K In member function ‘[01m[Kvoid TeleopWithCollision::closeGripper()[m[K’:
+[01m[K/home/adithya/gz_ws/src/teleop_collision/src/teleop_collision.cpp:176:30:[m[K [01;31m[Kerror: [m[K‘[01m[Kgripper_client_[m[K’ was not declared in this scope
+  176 |                         if (![01;31m[Kgripper_client_[m[K->wait_for_action_server(std::chrono::seconds(1))) {
+      |                              [01;31m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/home/adithya/gz_ws/src/teleop_collision/src/teleop_collision.cpp:181:25:[m[K [01;31m[Kerror: [m[K‘[01m[Kcontrol_msgs[m[K’ has not been declared
+  181 |                         [01;31m[Kcontrol_msgs[m[K::action::GripperCommand::Goal goal;
+      |                         [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/adithya/gz_ws/src/teleop_collision/src/teleop_collision.cpp:184:25:[m[K [01;31m[Kerror: [m[K‘[01m[Kgoal[m[K’ was not declared in this scope
+  184 |                         [01;31m[Kgoal[m[K.command.position=rad;
+      |                         [01;31m[K^~~~[m[K
+[01m[K/home/adithya/gz_ws/src/teleop_collision/src/teleop_collision.cpp:188:25:[m[K [01;31m[Kerror: [m[K‘[01m[Kgripper_client_[m[K’ was not declared in this scope
+  188 |                         [01;31m[Kgripper_client_[m[K->async_send_goal(goal);
+      |                         [01;31m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/home/adithya/gz_ws/src/teleop_collision/src/teleop_collision.cpp:[m[K In member function ‘[01m[Kvoid TeleopWithCollision::openGripper()[m[K’:
+[01m[K/home/adithya/gz_ws/src/teleop_collision/src/teleop_collision.cpp:208:29:[m[K [01;31m[Kerror: [m[K‘[01m[Kgripper_client_[m[K’ was not declared in this scope
+  208 |                         if(![01;31m[Kgripper_client_[m[K->wait_for_action_server(std::chrono::seconds(1))){
+      |                             [01;31m[K^~~~~~~~~~~~~~~[m[K
+[01m[K/home/adithya/gz_ws/src/teleop_collision/src/teleop_collision.cpp:212:25:[m[K [01;31m[Kerror: [m[K‘[01m[Kcontrol_msgs[m[K’ has not been declared
+  212 |                         [01;31m[Kcontrol_msgs[m[K::action::GripperCommand::Goal goal;
+      |                         [01;31m[K^~~~~~~~~~~~[m[K
+[01m[K/home/adithya/gz_ws/src/teleop_collision/src/teleop_collision.cpp:215:25:[m[K [01;31m[Kerror: [m[K‘[01m[Kgoal[m[K’ was not declared in this scope
+  215 |                         [01;31m[Kgoal[m[K.command.position=rad;
+      |                         [01;31m[K^~~~[m[K
+[01m[K/home/adithya/gz_ws/src/teleop_collision/src/teleop_collision.cpp:219:25:[m[K [01;31m[Kerror: [m[K‘[01m[Kgripper_client_[m[K’ was not declared in this scope
+  219 |                         [01;31m[Kgripper_client_[m[K->async_send_goal(goal);
+      |                         [01;31m[K^~~~~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/teleop_collision.dir/build.make:76: CMakeFiles/teleop_collision.dir/src/teleop_collision.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/teleop_collision.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

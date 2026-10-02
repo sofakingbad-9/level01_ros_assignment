@@ -1,0 +1,267 @@
+[0.000000] (-) TimerEvent: {}
+[0.000514] (leg_assembly) JobQueued: {'identifier': 'leg_assembly', 'dependencies': OrderedDict()}
+[0.000636] (teleop_collision) JobQueued: {'identifier': 'teleop_collision', 'dependencies': OrderedDict()}
+[0.000669] (leg_assembly_moveit_config) JobQueued: {'identifier': 'leg_assembly_moveit_config', 'dependencies': OrderedDict([('leg_assembly', '/home/adithya/gz_ws/install/leg_assembly')])}
+[0.000700] (leg_assembly) JobStarted: {'identifier': 'leg_assembly'}
+[0.004475] (teleop_collision) JobStarted: {'identifier': 'teleop_collision'}
+[0.007471] (leg_assembly) JobProgress: {'identifier': 'leg_assembly', 'progress': 'cmake'}
+[0.007982] (leg_assembly) JobProgress: {'identifier': 'leg_assembly', 'progress': 'build'}
+[0.008534] (leg_assembly) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/adithya/gz_ws/build/leg_assembly', '--', '-j16', '-l16'], 'cwd': '/home/adithya/gz_ws/build/leg_assembly', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_IN:en'), ('USER', 'adithya'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/adithya'), ('OLDPWD', '/home/adithya/gz_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '2049'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('_colcon_cd_root', '/opt/ros/humble/'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'adithya'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'adithya'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/home/adithya/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/adithya-Victus:@/tmp/.ICE-unix/2022,unix/adithya-Victus:/tmp/.ICE-unix/2022'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/d2c9f26e_d3ba_4233_8d7b_437358955717'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.159'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/adithya/gz_ws/build/leg_assembly'), ('TURTLEBOT3_MODEL', 'waffle'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.011691] (teleop_collision) JobProgress: {'identifier': 'teleop_collision', 'progress': 'cmake'}
+[0.012407] (teleop_collision) JobProgress: {'identifier': 'teleop_collision', 'progress': 'build'}
+[0.012423] (teleop_collision) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/adithya/gz_ws/build/teleop_collision', '--', '-j16', '-l16'], 'cwd': '/home/adithya/gz_ws/build/teleop_collision', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_IN:en'), ('USER', 'adithya'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/adithya'), ('OLDPWD', '/home/adithya/gz_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '2049'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('_colcon_cd_root', '/opt/ros/humble/'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'adithya'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'adithya'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/home/adithya/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/adithya-Victus:@/tmp/.ICE-unix/2022,unix/adithya-Victus:/tmp/.ICE-unix/2022'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/d2c9f26e_d3ba_4233_8d7b_437358955717'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.159'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/adithya/gz_ws/build/teleop_collision'), ('TURTLEBOT3_MODEL', 'waffle'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.045541] (leg_assembly) CommandEnded: {'returncode': 0}
+[0.046159] (leg_assembly) JobProgress: {'identifier': 'leg_assembly', 'progress': 'install'}
+[0.051065] (teleop_collision) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target teleop_collision\x1b[0m\n'}
+[0.053914] (leg_assembly) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/adithya/gz_ws/build/leg_assembly'], 'cwd': '/home/adithya/gz_ws/build/leg_assembly', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_IN:en'), ('USER', 'adithya'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/adithya'), ('OLDPWD', '/home/adithya/gz_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '2049'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('_colcon_cd_root', '/opt/ros/humble/'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'adithya'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'adithya'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/home/adithya/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/adithya-Victus:@/tmp/.ICE-unix/2022,unix/adithya-Victus:/tmp/.ICE-unix/2022'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/d2c9f26e_d3ba_4233_8d7b_437358955717'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.159'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/adithya/gz_ws/build/leg_assembly'), ('TURTLEBOT3_MODEL', 'waffle'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.059738] (leg_assembly) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[0.059928] (leg_assembly) StdoutLine: {'line': b'-- Up-to-date: /home/adithya/gz_ws/install/leg_assembly/share/leg_assembly/config\n'}
+[0.059978] (leg_assembly) StdoutLine: {'line': b'-- Up-to-date: /home/adithya/gz_ws/install/leg_assembly/share/leg_assembly/config/joint_names_leg_assembly.yaml\n'}
+[0.060015] (leg_assembly) StdoutLine: {'line': b'-- Up-to-date: /home/adithya/gz_ws/install/leg_assembly/share/leg_assembly/launch\n'}
+[0.060051] (leg_assembly) StdoutLine: {'line': b'-- Up-to-date: /home/adithya/gz_ws/install/leg_assembly/share/leg_assembly/launch/gazebo.launch.py\n'}
+[0.060087] (leg_assembly) StdoutLine: {'line': b'-- Up-to-date: /home/adithya/gz_ws/install/leg_assembly/share/leg_assembly/launch/display.launch.py\n'}
+[0.060121] (leg_assembly) StdoutLine: {'line': b'-- Up-to-date: /home/adithya/gz_ws/install/leg_assembly/share/leg_assembly/launch/gazebo.launch\n'}
+[0.060154] (leg_assembly) StdoutLine: {'line': b'-- Up-to-date: /home/adithya/gz_ws/install/leg_assembly/share/leg_assembly/meshes\n'}
+[0.060244] (leg_assembly) StdoutLine: {'line': b'-- Up-to-date: /home/adithya/gz_ws/install/leg_assembly/share/leg_assembly/meshes/finger_link_right.STL\n'}
+[0.060282] (leg_assembly) StdoutLine: {'line': b'-- Up-to-date: /home/adithya/gz_ws/install/leg_assembly/share/leg_assembly/meshes/finger_tip_right.STL\n'}
+[0.060316] (leg_assembly) StdoutLine: {'line': b'-- Up-to-date: /home/adithya/gz_ws/install/leg_assembly/share/leg_assembly/meshes/finger_link_left.STL\n'}
+[0.060401] (leg_assembly) StdoutLine: {'line': b'-- Up-to-date: /home/adithya/gz_ws/install/leg_assembly/share/leg_assembly/meshes/finger_tip_left.STL\n'}
+[0.060434] (leg_assembly) StdoutLine: {'line': b'-- Up-to-date: /home/adithya/gz_ws/install/leg_assembly/share/leg_assembly/meshes/link_3.STL\n'}
+[0.060466] (leg_assembly) StdoutLine: {'line': b'-- Up-to-date: /home/adithya/gz_ws/install/leg_assembly/share/leg_assembly/meshes/link_1.STL\n'}
+[0.060499] (leg_assembly) StdoutLine: {'line': b'-- Up-to-date: /home/adithya/gz_ws/install/leg_assembly/share/leg_assembly/meshes/base_link.STL\n'}
+[0.060531] (leg_assembly) StdoutLine: {'line': b'-- Up-to-date: /home/adithya/gz_ws/install/leg_assembly/share/leg_assembly/meshes/end_effector.STL\n'}
+[0.060565] (leg_assembly) StdoutLine: {'line': b'-- Up-to-date: /home/adithya/gz_ws/install/leg_assembly/share/leg_assembly/meshes/link_4.STL\n'}
+[0.060608] (leg_assembly) StdoutLine: {'line': b'-- Up-to-date: /home/adithya/gz_ws/install/leg_assembly/share/leg_assembly/meshes/link_2.STL\n'}
+[0.060641] (leg_assembly) StdoutLine: {'line': b'-- Up-to-date: /home/adithya/gz_ws/install/leg_assembly/share/leg_assembly/urdf\n'}
+[0.060768] (leg_assembly) StdoutLine: {'line': b'-- Up-to-date: /home/adithya/gz_ws/install/leg_assembly/share/leg_assembly/urdf/leg_assembly.csv\n'}
+[0.060827] (leg_assembly) StdoutLine: {'line': b'-- Up-to-date: /home/adithya/gz_ws/install/leg_assembly/share/leg_assembly/urdf/leg_assembly_gpt.urdf\n'}
+[0.060862] (leg_assembly) StdoutLine: {'line': b'-- Up-to-date: /home/adithya/gz_ws/install/leg_assembly/share/leg_assembly/urdf/leg_assembly.urdf\n'}
+[0.060893] (leg_assembly) StdoutLine: {'line': b'-- Up-to-date: /home/adithya/gz_ws/install/leg_assembly/share/leg_assembly/worlds\n'}
+[0.060923] (leg_assembly) StdoutLine: {'line': b'-- Up-to-date: /home/adithya/gz_ws/install/leg_assembly/share/leg_assembly/worlds/empty_world.world\n'}
+[0.060952] (leg_assembly) StdoutLine: {'line': b'-- Up-to-date: /home/adithya/gz_ws/install/leg_assembly/share/leg_assembly/worlds/empty.world\n'}
+[0.060980] (leg_assembly) StdoutLine: {'line': b'-- Up-to-date: /home/adithya/gz_ws/install/leg_assembly/share/ament_index/resource_index/package_run_dependencies/leg_assembly\n'}
+[0.061010] (leg_assembly) StdoutLine: {'line': b'-- Up-to-date: /home/adithya/gz_ws/install/leg_assembly/share/ament_index/resource_index/parent_prefix_path/leg_assembly\n'}
+[0.061039] (leg_assembly) StdoutLine: {'line': b'-- Up-to-date: /home/adithya/gz_ws/install/leg_assembly/share/leg_assembly/environment/ament_prefix_path.sh\n'}
+[0.061068] (leg_assembly) StdoutLine: {'line': b'-- Up-to-date: /home/adithya/gz_ws/install/leg_assembly/share/leg_assembly/environment/ament_prefix_path.dsv\n'}
+[0.061096] (leg_assembly) StdoutLine: {'line': b'-- Up-to-date: /home/adithya/gz_ws/install/leg_assembly/share/leg_assembly/environment/path.sh\n'}
+[0.061125] (leg_assembly) StdoutLine: {'line': b'-- Up-to-date: /home/adithya/gz_ws/install/leg_assembly/share/leg_assembly/environment/path.dsv\n'}
+[0.061154] (leg_assembly) StdoutLine: {'line': b'-- Up-to-date: /home/adithya/gz_ws/install/leg_assembly/share/leg_assembly/local_setup.bash\n'}
+[0.061183] (leg_assembly) StdoutLine: {'line': b'-- Up-to-date: /home/adithya/gz_ws/install/leg_assembly/share/leg_assembly/local_setup.sh\n'}
+[0.061211] (leg_assembly) StdoutLine: {'line': b'-- Up-to-date: /home/adithya/gz_ws/install/leg_assembly/share/leg_assembly/local_setup.zsh\n'}
+[0.061239] (leg_assembly) StdoutLine: {'line': b'-- Up-to-date: /home/adithya/gz_ws/install/leg_assembly/share/leg_assembly/local_setup.dsv\n'}
+[0.061444] (leg_assembly) StdoutLine: {'line': b'-- Installing: /home/adithya/gz_ws/install/leg_assembly/share/leg_assembly/package.dsv\n'}
+[0.061645] (leg_assembly) StdoutLine: {'line': b'-- Up-to-date: /home/adithya/gz_ws/install/leg_assembly/share/ament_index/resource_index/packages/leg_assembly\n'}
+[0.061772] (leg_assembly) StdoutLine: {'line': b'-- Up-to-date: /home/adithya/gz_ws/install/leg_assembly/share/leg_assembly/cmake/leg_assemblyConfig.cmake\n'}
+[0.062328] (leg_assembly) StdoutLine: {'line': b'-- Up-to-date: /home/adithya/gz_ws/install/leg_assembly/share/leg_assembly/cmake/leg_assemblyConfig-version.cmake\n'}
+[0.062508] (leg_assembly) StdoutLine: {'line': b'-- Up-to-date: /home/adithya/gz_ws/install/leg_assembly/share/leg_assembly/package.xml\n'}
+[0.062656] (leg_assembly) CommandEnded: {'returncode': 0}
+[0.071201] (teleop_collision) StdoutLine: {'line': b'[ 50%] \x1b[32mBuilding CXX object CMakeFiles/teleop_collision.dir/src/teleop_collision.cpp.o\x1b[0m\n'}
+[0.075001] (leg_assembly) JobEnded: {'identifier': 'leg_assembly', 'rc': 0}
+[0.075753] (leg_assembly_moveit_config) JobStarted: {'identifier': 'leg_assembly_moveit_config'}
+[0.079824] (leg_assembly_moveit_config) JobProgress: {'identifier': 'leg_assembly_moveit_config', 'progress': 'cmake'}
+[0.080228] (leg_assembly_moveit_config) JobProgress: {'identifier': 'leg_assembly_moveit_config', 'progress': 'build'}
+[0.080484] (leg_assembly_moveit_config) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/adithya/gz_ws/build/leg_assembly_moveit_config', '--', '-j16', '-l16'], 'cwd': '/home/adithya/gz_ws/build/leg_assembly_moveit_config', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_IN:en'), ('USER', 'adithya'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/adithya'), ('OLDPWD', '/home/adithya/gz_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '2049'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('_colcon_cd_root', '/opt/ros/humble/'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'adithya'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'adithya'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/home/adithya/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/adithya-Victus:@/tmp/.ICE-unix/2022,unix/adithya-Victus:/tmp/.ICE-unix/2022'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/d2c9f26e_d3ba_4233_8d7b_437358955717'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.159'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/adithya/gz_ws/install/leg_assembly:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/adithya/gz_ws/build/leg_assembly_moveit_config'), ('TURTLEBOT3_MODEL', 'waffle'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/adithya/gz_ws/install/leg_assembly:/opt/ros/humble')]), 'shell': False}
+[0.099809] (-) TimerEvent: {}
+[0.115854] (leg_assembly_moveit_config) CommandEnded: {'returncode': 0}
+[0.116371] (leg_assembly_moveit_config) JobProgress: {'identifier': 'leg_assembly_moveit_config', 'progress': 'install'}
+[0.116515] (leg_assembly_moveit_config) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/adithya/gz_ws/build/leg_assembly_moveit_config'], 'cwd': '/home/adithya/gz_ws/build/leg_assembly_moveit_config', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_IN:en'), ('USER', 'adithya'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/adithya'), ('OLDPWD', '/home/adithya/gz_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '2049'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('_colcon_cd_root', '/opt/ros/humble/'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'adithya'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'adithya'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/home/adithya/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/adithya-Victus:@/tmp/.ICE-unix/2022,unix/adithya-Victus:/tmp/.ICE-unix/2022'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/d2c9f26e_d3ba_4233_8d7b_437358955717'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.159'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/adithya/gz_ws/install/leg_assembly:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/adithya/gz_ws/build/leg_assembly_moveit_config'), ('TURTLEBOT3_MODEL', 'waffle'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/home/adithya/gz_ws/install/leg_assembly:/opt/ros/humble')]), 'shell': False}
+[0.123701] (leg_assembly_moveit_config) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[0.123893] (leg_assembly_moveit_config) StdoutLine: {'line': b'-- Up-to-date: /home/adithya/gz_ws/install/leg_assembly_moveit_config/share/ament_index/resource_index/package_run_dependencies/leg_assembly_moveit_config\n'}
+[0.123940] (leg_assembly_moveit_config) StdoutLine: {'line': b'-- Up-to-date: /home/adithya/gz_ws/install/leg_assembly_moveit_config/share/ament_index/resource_index/parent_prefix_path/leg_assembly_moveit_config\n'}
+[0.123978] (leg_assembly_moveit_config) StdoutLine: {'line': b'-- Up-to-date: /home/adithya/gz_ws/install/leg_assembly_moveit_config/share/leg_assembly_moveit_config/environment/ament_prefix_path.sh\n'}
+[0.124012] (leg_assembly_moveit_config) StdoutLine: {'line': b'-- Up-to-date: /home/adithya/gz_ws/install/leg_assembly_moveit_config/share/leg_assembly_moveit_config/environment/ament_prefix_path.dsv\n'}
+[0.124045] (leg_assembly_moveit_config) StdoutLine: {'line': b'-- Up-to-date: /home/adithya/gz_ws/install/leg_assembly_moveit_config/share/leg_assembly_moveit_config/environment/path.sh\n'}
+[0.124103] (leg_assembly_moveit_config) StdoutLine: {'line': b'-- Up-to-date: /home/adithya/gz_ws/install/leg_assembly_moveit_config/share/leg_assembly_moveit_config/environment/path.dsv\n'}
+[0.124175] (leg_assembly_moveit_config) StdoutLine: {'line': b'-- Up-to-date: /home/adithya/gz_ws/install/leg_assembly_moveit_config/share/leg_assembly_moveit_config/local_setup.bash\n'}
+[0.124208] (leg_assembly_moveit_config) StdoutLine: {'line': b'-- Up-to-date: /home/adithya/gz_ws/install/leg_assembly_moveit_config/share/leg_assembly_moveit_config/local_setup.sh\n'}
+[0.124239] (leg_assembly_moveit_config) StdoutLine: {'line': b'-- Up-to-date: /home/adithya/gz_ws/install/leg_assembly_moveit_config/share/leg_assembly_moveit_config/local_setup.zsh\n'}
+[0.124300] (leg_assembly_moveit_config) StdoutLine: {'line': b'-- Up-to-date: /home/adithya/gz_ws/install/leg_assembly_moveit_config/share/leg_assembly_moveit_config/local_setup.dsv\n'}
+[0.124380] (leg_assembly_moveit_config) StdoutLine: {'line': b'-- Installing: /home/adithya/gz_ws/install/leg_assembly_moveit_config/share/leg_assembly_moveit_config/package.dsv\n'}
+[0.124409] (leg_assembly_moveit_config) StdoutLine: {'line': b'-- Up-to-date: /home/adithya/gz_ws/install/leg_assembly_moveit_config/share/ament_index/resource_index/packages/leg_assembly_moveit_config\n'}
+[0.124438] (leg_assembly_moveit_config) StdoutLine: {'line': b'-- Up-to-date: /home/adithya/gz_ws/install/leg_assembly_moveit_config/share/leg_assembly_moveit_config/cmake/leg_assembly_moveit_configConfig.cmake\n'}
+[0.124468] (leg_assembly_moveit_config) StdoutLine: {'line': b'-- Up-to-date: /home/adithya/gz_ws/install/leg_assembly_moveit_config/share/leg_assembly_moveit_config/cmake/leg_assembly_moveit_configConfig-version.cmake\n'}
+[0.124496] (leg_assembly_moveit_config) StdoutLine: {'line': b'-- Up-to-date: /home/adithya/gz_ws/install/leg_assembly_moveit_config/share/leg_assembly_moveit_config/package.xml\n'}
+[0.124525] (leg_assembly_moveit_config) StdoutLine: {'line': b'-- Up-to-date: /home/adithya/gz_ws/install/leg_assembly_moveit_config/share/leg_assembly_moveit_config/launch\n'}
+[0.124553] (leg_assembly_moveit_config) StdoutLine: {'line': b'-- Up-to-date: /home/adithya/gz_ws/install/leg_assembly_moveit_config/share/leg_assembly_moveit_config/launch/demo.launch.py\n'}
+[0.124593] (leg_assembly_moveit_config) StdoutLine: {'line': b'-- Up-to-date: /home/adithya/gz_ws/install/leg_assembly_moveit_config/share/leg_assembly_moveit_config/launch/warehouse_db.launch.py\n'}
+[0.124622] (leg_assembly_moveit_config) StdoutLine: {'line': b'-- Up-to-date: /home/adithya/gz_ws/install/leg_assembly_moveit_config/share/leg_assembly_moveit_config/launch/move_group.launch.py\n'}
+[0.124650] (leg_assembly_moveit_config) StdoutLine: {'line': b'-- Up-to-date: /home/adithya/gz_ws/install/leg_assembly_moveit_config/share/leg_assembly_moveit_config/launch/rsp.launch.py\n'}
+[0.124678] (leg_assembly_moveit_config) StdoutLine: {'line': b'-- Up-to-date: /home/adithya/gz_ws/install/leg_assembly_moveit_config/share/leg_assembly_moveit_config/launch/setup_assistant.launch.py\n'}
+[0.124705] (leg_assembly_moveit_config) StdoutLine: {'line': b'-- Up-to-date: /home/adithya/gz_ws/install/leg_assembly_moveit_config/share/leg_assembly_moveit_config/launch/spawn_controllers.launch.py\n'}
+[0.124733] (leg_assembly_moveit_config) StdoutLine: {'line': b'-- Up-to-date: /home/adithya/gz_ws/install/leg_assembly_moveit_config/share/leg_assembly_moveit_config/launch/static_virtual_joint_tfs.launch.py\n'}
+[0.124766] (leg_assembly_moveit_config) StdoutLine: {'line': b'-- Up-to-date: /home/adithya/gz_ws/install/leg_assembly_moveit_config/share/leg_assembly_moveit_config/launch/moveit_rviz.launch.py\n'}
+[0.124795] (leg_assembly_moveit_config) StdoutLine: {'line': b'-- Up-to-date: /home/adithya/gz_ws/install/leg_assembly_moveit_config/share/leg_assembly_moveit_config/config\n'}
+[0.124823] (leg_assembly_moveit_config) StdoutLine: {'line': b'-- Up-to-date: /home/adithya/gz_ws/install/leg_assembly_moveit_config/share/leg_assembly_moveit_config/config/leg_assembly_gazebo.urdf.xacro\n'}
+[0.124851] (leg_assembly_moveit_config) StdoutLine: {'line': b'-- Up-to-date: /home/adithya/gz_ws/install/leg_assembly_moveit_config/share/leg_assembly_moveit_config/config/joint_limits.yaml\n'}
+[0.124878] (leg_assembly_moveit_config) StdoutLine: {'line': b'-- Up-to-date: /home/adithya/gz_ws/install/leg_assembly_moveit_config/share/leg_assembly_moveit_config/config/config_used.rviz\n'}
+[0.124905] (leg_assembly_moveit_config) StdoutLine: {'line': b'-- Up-to-date: /home/adithya/gz_ws/install/leg_assembly_moveit_config/share/leg_assembly_moveit_config/config/gazebo.xacro\n'}
+[0.124931] (leg_assembly_moveit_config) StdoutLine: {'line': b'-- Up-to-date: /home/adithya/gz_ws/install/leg_assembly_moveit_config/share/leg_assembly_moveit_config/config/leg_assembly.urdf.xacro\n'}
+[0.124959] (leg_assembly_moveit_config) StdoutLine: {'line': b'-- Up-to-date: /home/adithya/gz_ws/install/leg_assembly_moveit_config/share/leg_assembly_moveit_config/config/initial_positions.yaml\n'}
+[0.124987] (leg_assembly_moveit_config) StdoutLine: {'line': b'-- Up-to-date: /home/adithya/gz_ws/install/leg_assembly_moveit_config/share/leg_assembly_moveit_config/config/kinematics.yaml\n'}
+[0.125017] (leg_assembly_moveit_config) StdoutLine: {'line': b'-- Up-to-date: /home/adithya/gz_ws/install/leg_assembly_moveit_config/share/leg_assembly_moveit_config/config/moveit.rviz\n'}
+[0.125043] (leg_assembly_moveit_config) StdoutLine: {'line': b'-- Up-to-date: /home/adithya/gz_ws/install/leg_assembly_moveit_config/share/leg_assembly_moveit_config/config/pilz_cartesian_limits.yaml\n'}
+[0.125103] (leg_assembly_moveit_config) StdoutLine: {'line': b'-- Up-to-date: /home/adithya/gz_ws/install/leg_assembly_moveit_config/share/leg_assembly_moveit_config/config/gz_ros2_controllers.yaml\n'}
+[0.125176] (leg_assembly_moveit_config) StdoutLine: {'line': b'-- Up-to-date: /home/adithya/gz_ws/install/leg_assembly_moveit_config/share/leg_assembly_moveit_config/config/leg_assembly.srdf\n'}
+[0.125248] (leg_assembly_moveit_config) StdoutLine: {'line': b'-- Up-to-date: /home/adithya/gz_ws/install/leg_assembly_moveit_config/share/leg_assembly_moveit_config/config/moveit_controllers.yaml\n'}
+[0.125404] (leg_assembly_moveit_config) StdoutLine: {'line': b'-- Up-to-date: /home/adithya/gz_ws/install/leg_assembly_moveit_config/share/leg_assembly_moveit_config/config/ros2_controllers.yaml\n'}
+[0.125483] (leg_assembly_moveit_config) StdoutLine: {'line': b'-- Up-to-date: /home/adithya/gz_ws/install/leg_assembly_moveit_config/share/leg_assembly_moveit_config/config/leg_assembly.ros2_control.xacro\n'}
+[0.125514] (leg_assembly_moveit_config) StdoutLine: {'line': b'-- Up-to-date: /home/adithya/gz_ws/install/leg_assembly_moveit_config/share/leg_assembly_moveit_config/config/gazebo_ros2_control.xacro\n'}
+[0.125544] (leg_assembly_moveit_config) StdoutLine: {'line': b'-- Up-to-date: /home/adithya/gz_ws/install/leg_assembly_moveit_config/share/leg_assembly_moveit_config/config/robot_gazebo.xacro\n'}
+[0.125577] (leg_assembly_moveit_config) StdoutLine: {'line': b'-- Up-to-date: /home/adithya/gz_ws/install/leg_assembly_moveit_config/share/leg_assembly_moveit_config/.setup_assistant\n'}
+[0.125949] (leg_assembly_moveit_config) CommandEnded: {'returncode': 0}
+[0.134990] (leg_assembly_moveit_config) JobEnded: {'identifier': 'leg_assembly_moveit_config', 'rc': 0}
+[0.199902] (-) TimerEvent: {}
+[0.300174] (-) TimerEvent: {}
+[0.400460] (-) TimerEvent: {}
+[0.500719] (-) TimerEvent: {}
+[0.600983] (-) TimerEvent: {}
+[0.701258] (-) TimerEvent: {}
+[0.801496] (-) TimerEvent: {}
+[0.901732] (-) TimerEvent: {}
+[1.002031] (-) TimerEvent: {}
+[1.102419] (-) TimerEvent: {}
+[1.202688] (-) TimerEvent: {}
+[1.302998] (-) TimerEvent: {}
+[1.403286] (-) TimerEvent: {}
+[1.503581] (-) TimerEvent: {}
+[1.603824] (-) TimerEvent: {}
+[1.704070] (-) TimerEvent: {}
+[1.804311] (-) TimerEvent: {}
+[1.904598] (-) TimerEvent: {}
+[2.004896] (-) TimerEvent: {}
+[2.105141] (-) TimerEvent: {}
+[2.205424] (-) TimerEvent: {}
+[2.305710] (-) TimerEvent: {}
+[2.405955] (-) TimerEvent: {}
+[2.506237] (-) TimerEvent: {}
+[2.606614] (-) TimerEvent: {}
+[2.706863] (-) TimerEvent: {}
+[2.807123] (-) TimerEvent: {}
+[2.907412] (-) TimerEvent: {}
+[3.007671] (-) TimerEvent: {}
+[3.107928] (-) TimerEvent: {}
+[3.208207] (-) TimerEvent: {}
+[3.308449] (-) TimerEvent: {}
+[3.408839] (-) TimerEvent: {}
+[3.509136] (-) TimerEvent: {}
+[3.609527] (-) TimerEvent: {}
+[3.709837] (-) TimerEvent: {}
+[3.810122] (-) TimerEvent: {}
+[3.910411] (-) TimerEvent: {}
+[4.010726] (-) TimerEvent: {}
+[4.111072] (-) TimerEvent: {}
+[4.211452] (-) TimerEvent: {}
+[4.311732] (-) TimerEvent: {}
+[4.412020] (-) TimerEvent: {}
+[4.512400] (-) TimerEvent: {}
+[4.612751] (-) TimerEvent: {}
+[4.713022] (-) TimerEvent: {}
+[4.813389] (-) TimerEvent: {}
+[4.913737] (-) TimerEvent: {}
+[5.014018] (-) TimerEvent: {}
+[5.114260] (-) TimerEvent: {}
+[5.214529] (-) TimerEvent: {}
+[5.314791] (-) TimerEvent: {}
+[5.415098] (-) TimerEvent: {}
+[5.515370] (-) TimerEvent: {}
+[5.615664] (-) TimerEvent: {}
+[5.715936] (-) TimerEvent: {}
+[5.816243] (-) TimerEvent: {}
+[5.916608] (-) TimerEvent: {}
+[6.016897] (-) TimerEvent: {}
+[6.117174] (-) TimerEvent: {}
+[6.217489] (-) TimerEvent: {}
+[6.317786] (-) TimerEvent: {}
+[6.418145] (-) TimerEvent: {}
+[6.518502] (-) TimerEvent: {}
+[6.618785] (-) TimerEvent: {}
+[6.719069] (-) TimerEvent: {}
+[6.819354] (-) TimerEvent: {}
+[6.919591] (-) TimerEvent: {}
+[7.019845] (-) TimerEvent: {}
+[7.120201] (-) TimerEvent: {}
+[7.220607] (-) TimerEvent: {}
+[7.320955] (-) TimerEvent: {}
+[7.421220] (-) TimerEvent: {}
+[7.521589] (-) TimerEvent: {}
+[7.621825] (-) TimerEvent: {}
+[7.722112] (-) TimerEvent: {}
+[7.822389] (-) TimerEvent: {}
+[7.922670] (-) TimerEvent: {}
+[8.022950] (-) TimerEvent: {}
+[8.123274] (-) TimerEvent: {}
+[8.223531] (-) TimerEvent: {}
+[8.323811] (-) TimerEvent: {}
+[8.424100] (-) TimerEvent: {}
+[8.524389] (-) TimerEvent: {}
+[8.624725] (-) TimerEvent: {}
+[8.724957] (-) TimerEvent: {}
+[8.825196] (-) TimerEvent: {}
+[8.925561] (-) TimerEvent: {}
+[9.025830] (-) TimerEvent: {}
+[9.126124] (-) TimerEvent: {}
+[9.226488] (-) TimerEvent: {}
+[9.326751] (-) TimerEvent: {}
+[9.427029] (-) TimerEvent: {}
+[9.527379] (-) TimerEvent: {}
+[9.627667] (-) TimerEvent: {}
+[9.727949] (-) TimerEvent: {}
+[9.828319] (-) TimerEvent: {}
+[9.928720] (-) TimerEvent: {}
+[10.029107] (-) TimerEvent: {}
+[10.129590] (-) TimerEvent: {}
+[10.229898] (-) TimerEvent: {}
+[10.330231] (-) TimerEvent: {}
+[10.430668] (-) TimerEvent: {}
+[10.531006] (-) TimerEvent: {}
+[10.631310] (-) TimerEvent: {}
+[10.731667] (-) TimerEvent: {}
+[10.832067] (-) TimerEvent: {}
+[10.932516] (-) TimerEvent: {}
+[11.032851] (-) TimerEvent: {}
+[11.133161] (-) TimerEvent: {}
+[11.233507] (-) TimerEvent: {}
+[11.333824] (-) TimerEvent: {}
+[11.434126] (-) TimerEvent: {}
+[11.534461] (-) TimerEvent: {}
+[11.634759] (-) TimerEvent: {}
+[11.735084] (-) TimerEvent: {}
+[11.835405] (-) TimerEvent: {}
+[11.935765] (-) TimerEvent: {}
+[12.036214] (-) TimerEvent: {}
+[12.136654] (-) TimerEvent: {}
+[12.237102] (-) TimerEvent: {}
+[12.337467] (-) TimerEvent: {}
+[12.401294] (teleop_collision) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable teleop_collision\x1b[0m\n'}
+[12.437685] (-) TimerEvent: {}
+[12.537971] (-) TimerEvent: {}
+[12.638240] (-) TimerEvent: {}
+[12.738593] (-) TimerEvent: {}
+[12.838851] (-) TimerEvent: {}
+[12.939288] (-) TimerEvent: {}
+[13.035705] (teleop_collision) StdoutLine: {'line': b'[100%] Built target teleop_collision\n'}
+[13.039467] (-) TimerEvent: {}
+[13.048848] (teleop_collision) CommandEnded: {'returncode': 0}
+[13.049862] (teleop_collision) JobProgress: {'identifier': 'teleop_collision', 'progress': 'install'}
+[13.050438] (teleop_collision) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/adithya/gz_ws/build/teleop_collision'], 'cwd': '/home/adithya/gz_ws/build/teleop_collision', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_IN:en'), ('USER', 'adithya'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/adithya'), ('OLDPWD', '/home/adithya/gz_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '2049'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('_colcon_cd_root', '/opt/ros/humble/'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'adithya'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'adithya'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/home/adithya/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/adithya-Victus:@/tmp/.ICE-unix/2022,unix/adithya-Victus:/tmp/.ICE-unix/2022'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/d2c9f26e_d3ba_4233_8d7b_437358955717'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.159'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/adithya/gz_ws/build/teleop_collision'), ('TURTLEBOT3_MODEL', 'waffle'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[13.068995] (teleop_collision) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[13.069417] (teleop_collision) StdoutLine: {'line': b'-- Installing: /home/adithya/gz_ws/install/teleop_collision/lib/teleop_collision/teleop_collision\n'}
+[13.078499] (teleop_collision) StdoutLine: {'line': b'-- Set runtime path of "/home/adithya/gz_ws/install/teleop_collision/lib/teleop_collision/teleop_collision" to ""\n'}
+[13.078858] (teleop_collision) StdoutLine: {'line': b'-- Up-to-date: /home/adithya/gz_ws/install/teleop_collision/share/ament_index/resource_index/package_run_dependencies/teleop_collision\n'}
+[13.078954] (teleop_collision) StdoutLine: {'line': b'-- Up-to-date: /home/adithya/gz_ws/install/teleop_collision/share/ament_index/resource_index/parent_prefix_path/teleop_collision\n'}
+[13.079026] (teleop_collision) StdoutLine: {'line': b'-- Up-to-date: /home/adithya/gz_ws/install/teleop_collision/share/teleop_collision/environment/ament_prefix_path.sh\n'}
+[13.079092] (teleop_collision) StdoutLine: {'line': b'-- Up-to-date: /home/adithya/gz_ws/install/teleop_collision/share/teleop_collision/environment/ament_prefix_path.dsv\n'}
+[13.079158] (teleop_collision) StdoutLine: {'line': b'-- Up-to-date: /home/adithya/gz_ws/install/teleop_collision/share/teleop_collision/environment/path.sh\n'}
+[13.079221] (teleop_collision) StdoutLine: {'line': b'-- Up-to-date: /home/adithya/gz_ws/install/teleop_collision/share/teleop_collision/environment/path.dsv\n'}
+[13.079297] (teleop_collision) StdoutLine: {'line': b'-- Up-to-date: /home/adithya/gz_ws/install/teleop_collision/share/teleop_collision/local_setup.bash\n'}
+[13.079354] (teleop_collision) StdoutLine: {'line': b'-- Up-to-date: /home/adithya/gz_ws/install/teleop_collision/share/teleop_collision/local_setup.sh\n'}
+[13.079416] (teleop_collision) StdoutLine: {'line': b'-- Up-to-date: /home/adithya/gz_ws/install/teleop_collision/share/teleop_collision/local_setup.zsh\n'}
+[13.079476] (teleop_collision) StdoutLine: {'line': b'-- Up-to-date: /home/adithya/gz_ws/install/teleop_collision/share/teleop_collision/local_setup.dsv\n'}
+[13.079535] (teleop_collision) StdoutLine: {'line': b'-- Installing: /home/adithya/gz_ws/install/teleop_collision/share/teleop_collision/package.dsv\n'}
+[13.079764] (teleop_collision) StdoutLine: {'line': b'-- Up-to-date: /home/adithya/gz_ws/install/teleop_collision/share/ament_index/resource_index/packages/teleop_collision\n'}
+[13.079930] (teleop_collision) StdoutLine: {'line': b'-- Up-to-date: /home/adithya/gz_ws/install/teleop_collision/share/teleop_collision/cmake/teleop_collisionConfig.cmake\n'}
+[13.080005] (teleop_collision) StdoutLine: {'line': b'-- Up-to-date: /home/adithya/gz_ws/install/teleop_collision/share/teleop_collision/cmake/teleop_collisionConfig-version.cmake\n'}
+[13.080074] (teleop_collision) StdoutLine: {'line': b'-- Up-to-date: /home/adithya/gz_ws/install/teleop_collision/share/teleop_collision/package.xml\n'}
+[13.081483] (teleop_collision) CommandEnded: {'returncode': 0}
+[13.102062] (teleop_collision) JobEnded: {'identifier': 'teleop_collision', 'rc': 0}
+[13.102436] (-) EventReactorShutdown: {}
