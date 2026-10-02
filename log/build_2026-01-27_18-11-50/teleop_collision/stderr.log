@@ -1,4 +1,0 @@
-[01m[K/home/adithya/gz_ws/src/teleop_collision/src/teleop_collision.cpp:[m[K In member function ‘[01m[Kvoid TeleopWithCollision::JoyCallback(sensor_msgs::msg::Joy_<std::allocator<void> >::SharedPtr)[m[K’:
-[01m[K/home/adithya/gz_ws/src/teleop_collision/src/teleop_collision.cpp:93:7:[m[K [01;35m[Kwarning: [m[Kstatement has no effect [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-value-Wunused-value]8;;[m[K]
-   93 |       [01;35m[K0.0[m[K;
-      |       [01;35m[K^~~[m[K

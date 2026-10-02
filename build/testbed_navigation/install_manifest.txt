@@ -1,7 +1,0 @@
-/home/adithya/gz_ws/install/testbed_navigation/share/testbed_navigation//launch/navigation.launch.py
-/home/adithya/gz_ws/install/testbed_navigation/share/testbed_navigation//rviz/map_loader_config.rviz
-/home/adithya/gz_ws/install/testbed_navigation/share/testbed_navigation//config/nav2_params.yaml
-/home/adithya/gz_ws/install/testbed_navigation/share/testbed_navigation//config/map_loader_config.rviz
-/home/adithya/gz_ws/install/testbed_navigation/share/testbed_navigation//config/amcl.yaml
-/home/adithya/gz_ws/install/testbed_navigation/share/testbed_navigation//config/pointcloud_conv.yaml
-/home/adithya/gz_ws/install/testbed_navigation/share/testbed_navigation/package.dsv

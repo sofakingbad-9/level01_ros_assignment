@@ -1,1 +1,0 @@
-/home/adithya/gz_ws/src/testbed_navigation/launch/spawn_playground.launch.py

@@ -1,1 +1,0 @@
-/home/adithya/gz_ws/install/testbed_gazebo/share/testbed_gazebo/package.dsv

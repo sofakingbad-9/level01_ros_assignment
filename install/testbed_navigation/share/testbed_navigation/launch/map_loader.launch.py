@@ -1,1 +1,0 @@
-/home/adithya/gz_ws/src/testbed_navigation/launch/map_loader.launch.py

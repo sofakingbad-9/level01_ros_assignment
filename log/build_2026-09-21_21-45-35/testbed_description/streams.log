@@ -1,9 +1,0 @@
-[0.011s] Invoking command in '/home/adithya/gz_ws/build/testbed_description': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/adithya/gz_ws/src/level01_ros_assignment/testbed_description -DCMAKE_INSTALL_PREFIX=/home/adithya/gz_ws/install/testbed_description
-[0.063s] [31mCMake Error at CMakeLists.txt:24:
-[0.063s]   Parse error.  Expected "(", got newline with text "
-[0.063s] 
-[0.063s]   ".
-[0.064s] 
-[0.064s] [0m
-[0.064s] -- Configuring incomplete, errors occurred!
-[0.070s] Invoked command in '/home/adithya/gz_ws/build/testbed_description' returned '1': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake /home/adithya/gz_ws/src/level01_ros_assignment/testbed_description -DCMAKE_INSTALL_PREFIX=/home/adithya/gz_ws/install/testbed_description

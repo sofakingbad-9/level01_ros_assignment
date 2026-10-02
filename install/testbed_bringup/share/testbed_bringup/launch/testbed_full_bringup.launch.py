@@ -1,1 +1,0 @@
-/home/adithya/gz_ws/src/level01_ros_assignment/testbed_bringup/launch/testbed_full_bringup.launch.py

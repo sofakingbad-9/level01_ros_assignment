@@ -1,1 +1,0 @@
-/home/adithya/gz_ws/build/testbed_navigation/ament_cmake_core/testbed_navigationConfig-version.cmake

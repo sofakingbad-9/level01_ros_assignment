@@ -1,7 +1,0 @@
-[0.012s] Invoking command in '/home/adithya/gz_ws/build/testbed_bringup': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/adithya/gz_ws/build/testbed_bringup -- -j16 -l16
-[0.049s] Invoked command in '/home/adithya/gz_ws/build/testbed_bringup' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/adithya/gz_ws/build/testbed_bringup -- -j16 -l16
-[0.050s] Invoking command in '/home/adithya/gz_ws/build/testbed_bringup': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/adithya/gz_ws/build/testbed_bringup
-[0.057s] -- Install configuration: ""
-[0.057s] -- Up-to-date: /home/adithya/gz_ws/install/testbed_bringup/share/testbed_bringup//launch
-[0.057s] -- Installing: /home/adithya/gz_ws/install/testbed_bringup/share/testbed_bringup/package.dsv
-[0.072s] Invoked command in '/home/adithya/gz_ws/build/testbed_bringup' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/adithya/gz_ws/build/testbed_bringup
