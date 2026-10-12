@@ -7,6 +7,7 @@ email: adithyashriram06@gmail.com
 This project implements autonomous navigation for a simulated mobile robot using ROS 2 Humble, Gazebo Classic and Nav2.
 
 The goal was to set up the complete navigation pipeline, including localization, mapping, LiDAR processing, global and local costmaps, path planning, path following and recovery behaviors.
+Only remaining part is to tune it better, which was prohibited by time constraints
 
 The robot uses a simulated LiDAR for obstacle detection and AMCL for localization. Nav2 is used to generate and follow paths to a goal given through RViz.
 
