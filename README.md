@@ -1,130 +1,300 @@
-# Level 1: ROS2 Navigation Assignment - Your Full Name
-
+# Level-1 ROS Assignment
+Name:Adithya Shriram
+phn: +91 9043780186
+email: adithyashriram06@gmail.com
 ## Overview
-At ERIC Robotics, we’re big believers in building software with modularity. The nav2 stack reflects this perfectly with flexible, plugin-based framework, allowing you to pick and choose which pieces you need and run them independently. In this assignment, you’ll walk through the navigation workflow step by step—manually creating and calling actions—to bring an autonomous robot to life.
 
-**Here’s what to do:**
-1. We have shared some starter code for the 'Testbed-T1.0.0', a simple open-source robot developed by the team here at ERIC Robotics. **Please note that there are some bugs intentionally left in the starter code that you will need to identify and fix. You also need to make a text file listing the bugs you were able to identify and how did you fix them and add that file in the root directory outside the navigation package** Your task is to develop a new ROS2 package called `testbed_navigation` to manage the navigation workflow for this robot.
-2. However, rather than simply calling `nav2_bringup`, in this assignment you will manually build the required action components (i.e., using the `map_server`, `amcl`, `planner` plugins, and `bt_` plugins) to run ros2 navigation, by working directly with the respective `nav2` plugins.
-3. i.e., In the `testbed_navigation` package, write individual launch files to load a map, perform localization, and navigate using the plugins provided by `nav2`.
-4. Document your process so we can see how you tackled the task.
+This project implements autonomous navigation for a simulated mobile robot using ROS 2 Humble, Gazebo Classic and Nav2.
 
-This assignment gives you hands-on experience with ROS2’s navigation plugins, while showcasing your ability to design modular and effective robotics solutions.
+The goal was to set up the complete navigation pipeline, including localization, mapping, LiDAR processing, global and local costmaps, path planning, path following and recovery behaviors.
 
-### Deadline & submissions
-1. Four days (96 hrs) from the moment you accept the assignment.
-2. All applicants should fork the repository for the assignment. To submit your code, after completion create a Pull Request (PR) back to the `main` branch. You can commit any number of times to your fork before your deadline.
+The robot uses a simulated LiDAR for obstacle detection and AMCL for localization. Nav2 is used to generate and follow paths to a goal given through RViz.
 
-## Repository Structure
+## Navigation Pipeline
 
-```
-ros_nav2_assignment/
-├── testbed_description/
-│   ├── launch/            # Launch the full base simulation
-│   ├── meshes/
-│   ├── rviz/            # RVIZ configuration files
-│   └── urdf/            # URDF files for Testbed-T1.0.0
-├── testbed_gazebo/
-│   ├── worlds/            # Simulation world files
-│   ├── launch/            # Launch files for Gazebo
-│   └── models/            # Misc. Gazebo model files
-├── testbed_bringup/
-│   ├── launch/            # Launch file for bringing up the robot
-│   └── maps/              # Predefined map of the test environment
-├── help.md                # Guidelines and FAQs
-└── README.md              # Instructions for the assignment
-```
+The overall flow of the system is:
 
-## Assignment Objective
-Your goals are to:
-1. Learn how to configure and use ROS2 `nav2` plugins in independent files.
-2. Set up manual map loading and localization for the given simulation environment.
-3. Implement the required navigation plugins to handle robot navigation in the `testbed_navigation` package. Only basic navigational functionality is expected in this assignment, so choose your plugins accordingly.
+Gazebo LiDAR -> PointCloud2 -> pointcloud_to_laserscan -> LaserScan -> Nav2 costmaps
 
-## Requirements
+The global costmap uses the map from the map server along with the LiDAR data to represent the environment.
 
-To get started, you’ll need:
-- ROS2 Humble installed. (Install from [Humble Installation](https://docs.ros.org/en/humble/Installation.html)) (You will need Ubuntu 22.04/Windows 10 for this. More in the help section.)
-- Gazebo simulator (version 11.10.2 is compatible with ROS2 Humble) (Install from [Gazebo Installation](https://classic.gazebosim.org/tutorials?tut=install_ubuntu)) and Rviz simulator.
-- Basic to intermediate knowledge of ROS2 navigation concepts.
-- Familiarity with creating and managing ROS2 packages, actions, and parameter files.
-- The reference documentation for the `nav2` stack is going to be your best friend for this assignment: [Nav2 Documentation](https://navigation.ros.org/).
+The planner uses the global costmap to generate a path from the robot's current position to the goal.
 
-## Instructions
+The local costmap uses the robot's local surroundings to account for nearby obstacles while following the path.
 
-### 1. Setting Up the Repository
-1. Create your workspace:
-    ```bash
-    mkdir -p ~/assignment_ws/src
-    ```
-2. Fork this repository to your GitHub account, then clone your fork:
-   ```bash
-   cd ~/assignment_ws/src
-   git clone <your-fork-url>
-   ```
-2. Build the workspace:
-   ```bash
-   cd ~/assignment_ws/
-   colcon build
-   source install/setup.bash
-   ```
+The controller generates velocity commands which are sent to the Gazebo differential drive plugin through /cmd_vel.
 
-### 2. Launching the Simulation Environment
-1. Start the full simulation using:
-   ```bash
-   ros2 launch testbed_bringup testbed_full_bringup.launch.py
-   ```
-   This brings up the testbed environment in Gazebo and Rviz.
+The main navigation flow is:
 
-### 3. Creating the `testbed_navigation` Package
-1. In your workspace, create a new package:
-   ```bash
-   ros2 pkg create testbed_navigation --build-type ament_cmake
-   ```
-2. Set up the necessary directories for parameters, launch files, and scripts.
-3. Write proper build commands in CMakeLists.txt for your navigation package.
+RViz goal -> BT Navigator -> Planner Server -> Controller Server -> /cmd_vel -> Gazebo
 
-### 4. Map Loading
-1. Use the map provided in `testbed_bringup/maps/testbed_world.yaml`.
-2. Write actions in the launch file `testbed_navigation/launch/map_loader.launch.py` to load the map using the `map_server` plugin.
-3. Test and confirm that the map is loaded correctly in Rviz.
+AMCL is responsible for localization and provides the map to odom transform. The robot's odometry provides the odom to base_footprint transform.
 
-### 5. Localization
-1. Implement localization with the AMCL plugin:
-   - Write a parameter file for AMCL in `testbed_navigation/config/amcl_params.yaml`.
-   - Create actions in the launch file `testbed_navigation/launch/localization.launch.py` to run AMCL.
-   - Verify that the robot can localize itself in the simulated environment using Rviz.
+The TF chain used by the navigation system is:
 
-### 6. Navigation
-1. Set up navigation using `nav2` plugins:
-   - Configure parameter files for the global and local planners, behaviour tree plugins and any other nav2 plugin you want to use, like 'collision_monitor' or 'velocity_smoother', in `testbed_navigation/config/nav2_params.yaml`.
-   - Write actions in the launch file `testbed_navigation/launch/navigation.launch.py` to bring up the navigation workflow.
-2. Test the navigation setup by sending goals to the robot and observing its behavior.
+map -> odom -> base_footprint -> lidar_link_1
 
-### 7. Deliverables
-1. Submit your completed `testbed_navigation` package with:
-   - Parameter files for map loading, localization, and navigation.
-   - Launch files for each component.
-   - A `README.md` describing your approach and any challenges you faced.
-2. Provide a short video or screenshots showing your robot performing localization and navigation.
+## Main Components
 
-### 8. Evaluation Criteria
-We’ll be looking for:
-- A functional manual navigation setup.
-- Clear, well-structured parameter files and launch files.
-- A modular, well-documented implementation.
-- Successful localization and navigation in the simulation.
+### AMCL
 
-## Notes
-- You’re welcome to modify the robot description or simulation setup to better suit your implementation.
-- Thorough testing is encouraged to ensure everything works as expected.
-- If you have questions, check out the help section and don’t hesitate to reach out to us.
-- Lastly, we encourage you to share your code for review—even if it’s still a work in progress.
----
+AMCL is used for localization against the static map.
 
-We’re excited to see how you approach this task. Good luck, and happy coding! :)
+The main frames are:
 
-## Contact Info 
- - Name: Your full name
- - Contact number: Your contact number
- - Email Address: Your email address
+global frame: map
+odom frame: odom
+robot base frame: base_footprint
+
+AMCL uses the LaserScan data from /scan2 for localization.
+
+### Map Server
+
+The map server loads the occupancy grid from the map YAML file.
+
+The map YAML references the corresponding PGM image containing the occupancy information.
+
+The /map topic uses transient local QoS so that nodes joining after the map has been published can still receive the map.
+
+### LiDAR
+
+The simulated LiDAR is configured in Gazebo and publishes a PointCloud2 message on:
+
+/ray/pointcloud2 (which was first intentionally kept as /scan)
+
+Nav2's obstacle layer requires LaserScan data in this configuration, so the PointCloud2 is converted using pointcloud_to_laserscan.
+
+The resulting topic is:
+
+/scan2 
+
+The obstacle layers in both the global and local costmaps use /scan2.
+
+### Global Costmap
+
+The global costmap operates in the map frame.
+
+It uses:
+
+global_frame: map
+robot_base_frame: base_footprint
+
+The global costmap contains a static layer, obstacle layer and inflation layer.
+
+The static layer uses the map from the map server.
+
+The obstacle layer uses the LiDAR data from /scan2.
+
+The inflation layer adds a safety region around obstacles.
+
+### Local Costmap
+
+The local costmap operates in the odom frame and uses a rolling window around the robot.
+
+It uses:
+
+global_frame: odom
+robot_base_frame: base_footprint
+
+The local costmap contains an obstacle layer and inflation layer.
+
+The obstacle layer uses /scan2 to detect nearby obstacles.
+
+### Planner Server
+
+The global planner uses the NavFn planner:
+
+nav2_navfn_planner/NavfnPlanner
+
+The planner uses the global costmap to generate a path to the requested goal.
+
+### Controller Server
+
+The controller uses DWB:
+
+dwb_core::DWBLocalPlanner
+
+The controller follows the global path while taking the local costmap into account.
+
+It publishes velocity commands on:
+
+/cmd_vel
+
+These commands are received by the Gazebo differential drive plugin and used to move the robot.
+
+### Behavior Server
+
+The Behavior Server provides basic navigation behaviors used by the behavior tree.
+
+The configured behaviors include:
+
+Spin
+BackUp
+DriveOnHeading
+Wait
+
+These behaviors are used when the navigation system needs to perform actions such as rotating in place, reversing or waiting.
+
+### BT Navigator
+
+The BT Navigator manages the overall navigation process.
+
+When a goal is given in RViz, the BT Navigator coordinates the planner and controller and can also call recovery behaviors from the Behavior Server.
+
+The Behavior Server needs to be available before the BT Navigator is activated because the behavior tree can depend on action servers such as /spin.
+
+## Launch Configuration
+
+Instead of relying completely on the default Nav2 bringup launch files, the required Nav2 nodes were explicitly launched and configured.
+
+The launch file starts the required components including:
+
+map_server
+AMCL
+planner_server
+controller_server
+global_costmap
+local_costmap
+behavior_server
+bt_navigator
+pointcloud_to_laserscan
+lifecycle_manager
+
+The lifecycle manager is used to configure and activate the lifecycle nodes.
+
+The order of the lifecycle nodes is important. The Behavior Server is started before the BT Navigator so that the required behavior action servers are available when the BT Navigator is configured.
+
+## Parameter Configuration
+
+The Nav2 parameters are stored in:
+
+config/nav2_params.yaml
+
+The parameter file contains separate sections for the different Nav2 nodes.
+
+For example:
+
+planner_server:
+  ros__parameters:
+    ...
+
+controller_server:
+  ros__parameters:
+    ...
+
+global_costmap:
+  global_costmap:
+    ros__parameters:
+      ...
+
+local_costmap:
+  local_costmap:
+    ros__parameters:
+      ...
+
+The parameter file is accessed using the package share directory.
+
+The configuration files also need to be installed by the package's CMakeLists.txt so that they are available in the installed package.
+
+One issue encountered during development was that the config directory was not being installed. This meant that the launch file was looking for the parameter file in the install directory but the file was not actually there.
+
+After adding the config directory to the CMake installation rules and rebuilding the workspace, the parameter file was loaded correctly.
+
+## Intentional Issues in the Assignment
+
+The assignment contained several intentionally introduced configuration issues. These were identified and fixed during the setup.
+
+### Missing ament_package()
+
+The testbed_description package was missing:
+
+ament_package()
+
+from its CMakeLists.txt.
+
+This prevented the package from being correctly registered as an ament package.
+
+Adding ament_package() to the CMakeLists.txt fixed the issue.
+
+### Incorrect Map PGM Path
+
+The map YAML file contained an incorrect path to the PGM image.
+
+Because of this, the map server could not correctly load the map.
+
+The path was corrected so that the YAML file pointed to the correct PGM file.
+
+### Map QoS
+
+The /map topic uses transient local QoS.
+
+This is important because the map is published by the map server and nodes such as AMCL may start after the map has already been published.
+
+The map QoS configuration was corrected to use transient local durability so that the map could be received correctly.
+
+### Incorrect LiDAR Topic
+
+The original LiDAR configuration and the navigation configuration did not match.
+
+The simulated LiDAR was publishing PointCloud2 data on:
+
+/ray/pointcloud2
+
+while the navigation stack was expecting LaserScan data.
+
+A pointcloud_to_laserscan node was therefore added.
+
+The resulting data flow is:
+
+/ray/pointcloud2 -> pointcloud_to_laserscan -> /scan2
+
+The Nav2 obstacle layers and AMCL were then configured to use /scan2.
+
+### RViz LaserScan QoS
+
+The RViz LaserScan display had an incompatible QoS configuration for the LaserScan topic.
+
+This prevented RViz from correctly receiving the scan data.
+
+The QoS settings were changed to match the LaserScan publisher.
+
+## Challenges Faced
+
+One of the main challenges was getting all of the Nav2 components to work together rather than debugging them individually.
+
+lifecycle nodes gave me a lot of trouble, with parameter issues, nodes being unconfigured and inactive etc.
+
+There were several issues involving configuration files, package installation, TF and timestamps, QoS settings and Nav2 plugin names.
+
+The planner initially failed to load because the configured NavFn plugin name was different from the plugin name available in the installed Nav2 version.
+
+The configured plugin was:
+
+nav2_navfn_planner::NavfnPlanner
+
+but the installed plugin was:
+
+nav2_navfn_planner/NavfnPlanner
+
+Changing the plugin name allowed the planner to load.
+
+There were also TF timestamp warnings involving the LiDAR and costmaps. The TF chain itself was verified as:
+
+map -> odom -> base_footprint
+
+The costmaps were eventually able to receive the required transforms and sensor data.
+
+Another issue occurred when starting the BT Navigator. It reported that the spin action server was not available.
+
+This was caused by the required behavior server not being available before the BT Navigator was initialized. The behavior server was added to the launch configuration and placed before the BT Navigator in the lifecycle manager's node list.
+
+
+
+## Final Result
+
+The final system successfully integrates Gazebo, AMCL, Nav2, LiDAR processing, global and local costmaps, global planning, local control and recovery behaviors.
+
+The robot can receive a goal from RViz, localize itself on the map, generate a path to the goal and use the controller to produce velocity commands for the simulated differential-drive robot.
+
+
+
